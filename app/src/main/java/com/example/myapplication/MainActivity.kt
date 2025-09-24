@@ -68,7 +68,6 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -104,8 +103,7 @@ private sealed class AppScreen {
 
 @Composable
 private fun YemekYapalimmiApp() {
-    val context = LocalContext.current
-    val categories = remember(context) { RecipeRepository.loadCategories(context) }
+    val categories = remember { RecipeRepository.loadCategories() }
     var currentScreen by remember { mutableStateOf<AppScreen>(AppScreen.RoleSelection) }
 
     val roleForBackground = when (val screen = currentScreen) {
