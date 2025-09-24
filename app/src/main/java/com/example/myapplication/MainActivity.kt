@@ -571,7 +571,7 @@ private fun InstructionCard(
     steps: List<String>,
     isHighlighted: Boolean,
     showSteps: Boolean = true,
-    extraContent: (ColumnScope.(Boolean) -> Unit)? = null
+    extraContent: (@Composable ColumnScope.(Boolean) -> Unit)? = null
 ) {
     val shape = RoundedCornerShape(28.dp)
     Card(
