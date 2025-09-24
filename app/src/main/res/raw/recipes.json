@@ -1,0 +1,1779 @@
+[
+  {
+    "kategori": "makarna",
+    "tarifler": [
+      {
+        "id": "makarna_domatesli_spagetti",
+        "isim": "Klasik Domatesli Spagetti",
+        "hazirlikDakika": 15,
+        "pisirmeDakika": 20,
+        "toplamDakika": 35,
+        "kalori": 520,
+        "ikon": "ic_recipe_thumb_peach",
+        "kucukResim": "ic_recipe_thumb_peach",
+        "malzemeler": [
+          "400 g spagetti",
+          "6 adet olgun domates",
+          "3 yemek kaşığı zeytinyağı",
+          "2 diş sarımsak",
+          "1 tatlı kaşığı kuru fesleğen",
+          "1 çay kaşığı toz şeker",
+          "Tuz ve karabiber",
+          "Servis için rendelenmiş peynir"
+        ],
+        "adimlarKadin": [
+          "Domatesleri sıcak suya batırıp kabuklarını soyun ve küp doğrayın.",
+          "Geniş tavada zeytinyağını ısıtıp ezilmiş sarımsakları kokusu çıkana kadar çevirin.",
+          "Domates, fesleğen, şeker ve baharatları ekleyip sosu kıvam alana dek pişirin."
+        ],
+        "adimlarErkek": [
+          "Büyük bir tencerede suyu kaynatıp bolca tuz ekleyin.",
+          "Spagettiyi paketteki süreye göre al dente olacak şekilde haşlayın.",
+          "Süzülen makarnayı domates sosuyla karıştırıp üzerine peynir serpip servis edin."
+        ]
+      },
+      {
+        "id": "makarna_kremali_mantarli_fettuccine",
+        "isim": "Kremalı Mantarlı Fettuccine",
+        "hazirlikDakika": 20,
+        "pisirmeDakika": 15,
+        "toplamDakika": 35,
+        "kalori": 610,
+        "ikon": "ic_recipe_thumb_mint",
+        "kucukResim": "ic_recipe_thumb_mint",
+        "malzemeler": [
+          "350 g fettuccine",
+          "300 g kültür mantarı",
+          "1 adet küçük soğan",
+          "2 yemek kaşığı tereyağı",
+          "200 ml krema",
+          "1/2 su bardağı rendelenmiş parmesan",
+          "Taze çekilmiş karabiber",
+          "Maydanoz"
+        ],
+        "adimlarKadin": [
+          "Mantarı temizleyip ince dilimler halinde doğrayın, soğanı küp kesin.",
+          "Tavada tereyağı eritip soğan ve mantarı kızarana kadar soteleyin.",
+          "Kremayı ekleyip kıvam alınca parmesan ve maydanozla sosu tamamlayın."
+        ],
+        "adimlarErkek": [
+          "Fettuccine'yi tuzlu kaynar suda al dente pişirin.",
+          "Makarnayı süzüp sos tavasına ekleyin ve her yerine sos bulaşana dek çevirin.",
+          "Tabakları doldurup üzerine ekstra parmesan ve karabiber serpin."
+        ]
+      },
+      {
+        "id": "makarna_pesto_penne",
+        "isim": "Fesleğenli Pesto Penne",
+        "hazirlikDakika": 15,
+        "pisirmeDakika": 12,
+        "toplamDakika": 27,
+        "kalori": 480,
+        "ikon": "ic_recipe_thumb_lilac",
+        "kucukResim": "ic_recipe_thumb_lilac",
+        "malzemeler": [
+          "350 g penne",
+          "1 demet taze fesleğen",
+          "1/2 su bardağı zeytinyağı",
+          "1/3 su bardağı dolmalık fıstık",
+          "1/2 su bardağı rendelenmiş parmesan",
+          "1 diş sarımsak",
+          "Tuz",
+          "10 adet cherry domates"
+        ],
+        "adimlarKadin": [
+          "Fesleğen yaprakları, sarımsak, fıstık ve parmesanla pesto sosunu rondoda çekin.",
+          "Zeytinyağını ince ince ekleyerek parlak bir kıvam elde edin.",
+          "Cherry domatesleri ikiye bölüp az zeytinyağıyla marine edin."
+        ],
+        "adimlarErkek": [
+          "Penne makarnayı bol tuzlu suda diri kalacak şekilde pişirin.",
+          "Süzdükten sonra pesto sosu ve domateslerle geniş bir kapta harmanlayın.",
+          "Tabakları roka yapraklarıyla süsleyerek servis edin."
+        ]
+      },
+      {
+        "id": "makarna_firin_beşamel",
+        "isim": "Fırın Beşamel Makarna",
+        "hazirlikDakika": 25,
+        "pisirmeDakika": 30,
+        "toplamDakika": 55,
+        "kalori": 690,
+        "ikon": "ic_recipe_thumb_sunrise",
+        "kucukResim": "ic_recipe_thumb_sunrise",
+        "malzemeler": [
+          "400 g burgu makarna",
+          "2 yemek kaşığı tereyağı",
+          "2 yemek kaşığı un",
+          "4 su bardağı süt",
+          "2 su bardağı rendelenmiş kaşar",
+          "1 su bardağı haşlanmış bezelye",
+          "1 adet havuç",
+          "Tuz, karabiber, muskat"
+        ],
+        "adimlarKadin": [
+          "Beşamel için tereyağını eritip unla kavurun, sütü ekleyip sürekli çırpın.",
+          "Muskat ve baharatlarla sosu lezzetlendirin, kıvam alınca ocaktan alın.",
+          "Bezelye ve havucu küçük küpler halinde doğrayıp hafifçe soteleyin."
+        ],
+        "adimlarErkek": [
+          "Makarnayı 8 dakika haşlayıp süzün.",
+          "Makarnayı beşamel, sebzeler ve kaşarın yarısıyla karıştırıp fırın kabına alın.",
+          "Üzerine kalan peyniri serpip 190°C fırında kızarana kadar pişirin."
+        ]
+      },
+      {
+        "id": "makarna_deniz_mahsullu_linguine",
+        "isim": "Deniz Mahsullü Linguine",
+        "hazirlikDakika": 20,
+        "pisirmeDakika": 15,
+        "toplamDakika": 35,
+        "kalori": 540,
+        "ikon": "ic_recipe_thumb_sky",
+        "kucukResim": "ic_recipe_thumb_sky",
+        "malzemeler": [
+          "350 g linguine",
+          "200 g karides",
+          "150 g kalamar halkası",
+          "1 adet soğan",
+          "2 diş sarımsak",
+          "1 çay bardağı beyaz şarap",
+          "1 su bardağı cherry domates",
+          "Taze fesleğen"
+        ],
+        "adimlarKadin": [
+          "Karides ve kalamarı zeytinyağı, limon kabuğu ve pul biberle marine edin.",
+          "Soğan ve sarımsağı soteleyip marine deniz mahsullerini ekleyin.",
+          "Beyaz şarapla deglaze edip cherry domateslerle sosu tamamlayın."
+        ],
+        "adimlarErkek": [
+          "Linguine'yi tuzlu kaynar suda 10 dakika haşlayın.",
+          "Makarnayı süzüp deniz mahsullü sosla buluşturun.",
+          "Servis ederken fesleğen yaprakları ve limon dilimleri ekleyin."
+        ]
+      },
+      {
+        "id": "makarna_kabak_spagetti",
+        "isim": "Kabaklı Hafif Spagetti",
+        "hazirlikDakika": 15,
+        "pisirmeDakika": 10,
+        "toplamDakika": 25,
+        "kalori": 430,
+        "ikon": "ic_recipe_thumb_peach",
+        "kucukResim": "ic_recipe_thumb_peach",
+        "malzemeler": [
+          "300 g spagetti",
+          "2 adet kabak",
+          "1 diş sarımsak",
+          "1 adet limon kabuğu rendesi",
+          "1/2 su bardağı rendelenmiş beyaz peynir",
+          "Taze nane ve dereotu",
+          "2 yemek kaşığı zeytinyağı",
+          "Tuz"
+        ],
+        "adimlarKadin": [
+          "Kabakları spiralizer ile ince şeritler haline getirin.",
+          "Zeytinyağında sarımsağı hafifçe çevirip kabak şeritlerini kısa süre soteleyin.",
+          "Limon kabuğu, nane ve dereotuyla karışımı ferahlatın."
+        ],
+        "adimlarErkek": [
+          "Spagettiyi 8 dakika haşlayıp süzün.",
+          "Makarnayı kabak karışımı ve peynirle harmanlayın.",
+          "Servis tabaklarında taze otlarla süsleyin."
+        ]
+      },
+      {
+        "id": "makarna_eriste_kofte",
+        "isim": "Kıvırcık Erişte ve Misket Köfte",
+        "hazirlikDakika": 25,
+        "pisirmeDakika": 25,
+        "toplamDakika": 50,
+        "kalori": 680,
+        "ikon": "ic_recipe_thumb_mint",
+        "kucukResim": "ic_recipe_thumb_mint",
+        "malzemeler": [
+          "300 g erişte",
+          "300 g kıyma",
+          "1 adet soğan",
+          "1 adet yumurta",
+          "2 yemek kaşığı galeta unu",
+          "2 yemek kaşığı tereyağı",
+          "1 su bardağı yoğurt",
+          "Pul biber, kimyon"
+        ],
+        "adimlarKadin": [
+          "Kıymayı soğan, yumurta, galeta unu ve baharatlarla yoğurup küçük köfteler yapın.",
+          "Yoğurdu sarımsakla karıştırarak sosu hazırlayın.",
+          "Köfteleri az yağda kızartıp fazla yağını kağıt havluda süzdürün."
+        ],
+        "adimlarErkek": [
+          "Erişteyi tereyağıyla kavurup üzerine sıcak su ekleyerek pişirin.",
+          "Pişen erişteleri servis tabağına alın, köfteleri üzerine yerleştirin.",
+          "Yoğurt sosu gezdirip pul biberle süsleyin."
+        ]
+      },
+      {
+        "id": "makarna_peynirli_ravioli",
+        "isim": "Peynirli Ispanaklı Ravioli",
+        "hazirlikDakika": 35,
+        "pisirmeDakika": 10,
+        "toplamDakika": 45,
+        "kalori": 560,
+        "ikon": "ic_recipe_thumb_lilac",
+        "kucukResim": "ic_recipe_thumb_lilac",
+        "malzemeler": [
+          "2 su bardağı un",
+          "2 adet yumurta",
+          "200 g ricotta",
+          "150 g ıspanak",
+          "1/3 su bardağı parmesan",
+          "2 yemek kaşığı tereyağı",
+          "Taze adaçayı",
+          "Tuz"
+        ],
+        "adimlarKadin": [
+          "Ispanağı hafifçe soteleyip ince kıyın, ricotta ve parmesanla iç harcı hazırlayın.",
+          "Hamuru yoğurup ince açın ve iç harçla küçük kareler oluşturun.",
+          "Adaçayını tereyağında kızdırarak servis sosu hazırlayın."
+        ],
+        "adimlarErkek": [
+          "Raviolileri kaynar tuzlu suda 3-4 dakika haşlayın.",
+          "Süzülen raviolileri adaçaylı tereyağa aktararak karıştırın.",
+          "Tabaklara paylaştırıp üzerine parmesan rendeleyin."
+        ]
+      },
+      {
+        "id": "makarna_acili_arrabbiata",
+        "isim": "Acılı Arrabbiata",
+        "hazirlikDakika": 10,
+        "pisirmeDakika": 15,
+        "toplamDakika": 25,
+        "kalori": 450,
+        "ikon": "ic_recipe_thumb_sunrise",
+        "kucukResim": "ic_recipe_thumb_sunrise",
+        "malzemeler": [
+          "350 g penne",
+          "4 yemek kaşığı zeytinyağı",
+          "4 diş sarımsak",
+          "2 adet kurutulmuş acı biber",
+          "400 g doğranmış domates",
+          "Tuz, karabiber",
+          "Taze maydanoz"
+        ],
+        "adimlarKadin": [
+          "Sarımsakları ince dilimleyip zeytinyağında hafifçe kızartın.",
+          "Acı biberleri ekleyip aromasını yağa bırakmasını sağlayın.",
+          "Domatesi ve baharatları ekleyip sosu koyulaştırın."
+        ],
+        "adimlarErkek": [
+          "Penne makarnayı 9 dakika haşlayın.",
+          "Süzdüğünüz makarnayı sosla karıştırın.",
+          "Serviste kıyılmış maydanoz ve parmesan ilave edin."
+        ]
+      },
+      {
+        "id": "makarna_karidesli_tagliatelle",
+        "isim": "Karidesli Tagliatelle",
+        "hazirlikDakika": 18,
+        "pisirmeDakika": 12,
+        "toplamDakika": 30,
+        "kalori": 510,
+        "ikon": "ic_recipe_thumb_sky",
+        "kucukResim": "ic_recipe_thumb_sky",
+        "malzemeler": [
+          "300 g tagliatelle",
+          "250 g jumbo karides",
+          "1 adet limon",
+          "2 diş sarımsak",
+          "2 yemek kaşığı tereyağı",
+          "1/2 su bardağı beyaz şarap",
+          "Maydanoz",
+          "Pul biber"
+        ],
+        "adimlarKadin": [
+          "Karidesleri sarımsak, limon kabuğu ve pul biberle marine edin.",
+          "Tereyağında karidesleri kısaca soteleyin, beyaz şarapla lezzetlendirin.",
+          "Sosun içine limon suyu ve maydanoz ekleyin."
+        ],
+        "adimlarErkek": [
+          "Tagliatelle'yi bol tuzlu suda 7 dakika haşlayın.",
+          "Makarnayı süzüp sosla karıştırın.",
+          "Servis tabaklarına alıp limon dilimleriyle sunun."
+        ]
+      }
+    ]
+  },
+  {
+    "kategori": "corba",
+    "tarifler": [
+      {
+        "id": "corba_mercimek",
+        "isim": "Klasik Mercimek Çorbası",
+        "hazirlikDakika": 10,
+        "pisirmeDakika": 30,
+        "toplamDakika": 40,
+        "kalori": 220,
+        "ikon": "ic_recipe_thumb_peach",
+        "kucukResim": "ic_recipe_thumb_peach",
+        "malzemeler": [
+          "1 su bardağı kırmızı mercimek",
+          "1 adet soğan",
+          "1 adet havuç",
+          "1 yemek kaşığı tereyağı",
+          "1 yemek kaşığı un",
+          "6 su bardağı su",
+          "Tuz, kimyon",
+          "Üzeri için pul biber"
+        ],
+        "adimlarKadin": [
+          "Soğan ve havucu küp doğrayıp tereyağında yumuşatın.",
+          "Unu ekleyip hafifçe kavurduktan sonra mercimeği ilave edin.",
+          "Suyu ve baharatları ekleyip mercimekler yumuşayana kadar pişirin."
+        ],
+        "adimlarErkek": [
+          "Pişen çorbayı blenderdan geçirip pürüzsüz hale getirin.",
+          "Tuzu ayarlayıp birkaç dakika daha kaynatın.",
+          "Servis kaselerine alıp pul biberli tereyağı gezdirin."
+        ]
+      },
+      {
+        "id": "corba_yayla",
+        "isim": "Yayla Çorbası",
+        "hazirlikDakika": 15,
+        "pisirmeDakika": 25,
+        "toplamDakika": 40,
+        "kalori": 210,
+        "ikon": "ic_recipe_thumb_mint",
+        "kucukResim": "ic_recipe_thumb_mint",
+        "malzemeler": [
+          "1 su bardağı yoğurt",
+          "1 adet yumurta",
+          "2 yemek kaşığı un",
+          "1/2 su bardağı pirinç",
+          "6 su bardağı su",
+          "2 yemek kaşığı tereyağı",
+          "Nane, pul biber",
+          "Tuz"
+        ],
+        "adimlarKadin": [
+          "Yoğurt, yumurta ve unu çırparak terbiyeyi hazırlayın.",
+          "Pirinçleri yıkayıp tencerede suyla haşlamaya başlayın.",
+          "Haşlanan pirince terbiyeyi yavaşça ekleyip sürekli karıştırın."
+        ],
+        "adimlarErkek": [
+          "Çorba kıvamını alana kadar kısık ateşte karıştırarak pişirin.",
+          "Tereyağını eritip nane ve pul biberle kızdırın.",
+          "Servis öncesi naneli yağı çorbanın üzerine gezdirin."
+        ]
+      },
+      {
+        "id": "corba_ezogelin",
+        "isim": "Ezogelin Çorbası",
+        "hazirlikDakika": 15,
+        "pisirmeDakika": 35,
+        "toplamDakika": 50,
+        "kalori": 240,
+        "ikon": "ic_recipe_thumb_lilac",
+        "kucukResim": "ic_recipe_thumb_lilac",
+        "malzemeler": [
+          "1 su bardağı kırmızı mercimek",
+          "2 yemek kaşığı bulgur",
+          "1 yemek kaşığı pirinç",
+          "1 adet soğan",
+          "1 yemek kaşığı domates salçası",
+          "1 yemek kaşığı biber salçası",
+          "2 yemek kaşığı tereyağı",
+          "Nane, kimyon"
+        ],
+        "adimlarKadin": [
+          "Soğanı tereyağında kavurup salçaları ekleyin.",
+          "Mercimek, bulgur ve pirinci ekleyip birkaç dakika çevirin.",
+          "Üzerine sıcak su ekleyip taneler yumuşayana kadar pişirin."
+        ],
+        "adimlarErkek": [
+          "Çorbayı blenderdan geçirip kıvamını ayarlayın.",
+          "Baharatları ekleyip 5 dakika daha kaynatın.",
+          "Serviste limon dilimleri ve naneli tereyağı ekleyin."
+        ]
+      },
+      {
+        "id": "corba_tarhana",
+        "isim": "Ev Tarhanası",
+        "hazirlikDakika": 10,
+        "pisirmeDakika": 20,
+        "toplamDakika": 30,
+        "kalori": 200,
+        "ikon": "ic_recipe_thumb_sunrise",
+        "kucukResim": "ic_recipe_thumb_sunrise",
+        "malzemeler": [
+          "3 yemek kaşığı toz tarhana",
+          "1 yemek kaşığı tereyağı",
+          "1 yemek kaşığı domates salçası",
+          "5 su bardağı su",
+          "1 diş sarımsak",
+          "Nane, pul biber",
+          "Tuz"
+        ],
+        "adimlarKadin": [
+          "Tarhanayı ılık suyla açıp topaklanmasını önleyin.",
+          "Tereyağında sarımsak ve salçayı kavurun.",
+          "Tarhana karışımını tencereye ekleyip karıştırarak kaynatın."
+        ],
+        "adimlarErkek": [
+          "Çorba koyulaşınca tuz ve baharatlarını ayarlayın.",
+          "Kısık ateşte 5 dakika daha pişirin.",
+          "Servis kaselerine alıp nane ve pul biberle süsleyin."
+        ]
+      },
+      {
+        "id": "corba_brokoli",
+        "isim": "Kremalı Brokoli Çorbası",
+        "hazirlikDakika": 15,
+        "pisirmeDakika": 20,
+        "toplamDakika": 35,
+        "kalori": 230,
+        "ikon": "ic_recipe_thumb_sky",
+        "kucukResim": "ic_recipe_thumb_sky",
+        "malzemeler": [
+          "1 adet brokoli",
+          "1 adet patates",
+          "1 adet soğan",
+          "1 yemek kaşığı tereyağı",
+          "1 yemek kaşığı un",
+          "2 su bardağı süt",
+          "3 su bardağı sebze suyu",
+          "Tuz, muskat"
+        ],
+        "adimlarKadin": [
+          "Soğanı tereyağında kavurup un ekleyerek kısa süre çevirin.",
+          "Patates ve brokoliyi ekleyip sebze suyuyla yumuşayana kadar pişirin.",
+          "Sütü ekleyip blenderdan geçirerek pürüzsüz kıvam elde edin."
+        ],
+        "adimlarErkek": [
+          "Çorbayı tekrar ocağa alıp tuz ve muskatla tatlandırın.",
+          "Kısık ateşte 5 dakika daha kaynatın.",
+          "Servis kaselerine alıp krema ile süsleyin."
+        ]
+      },
+      {
+        "id": "corba_balkabagi",
+        "isim": "Zencefilli Balkabağı Çorbası",
+        "hazirlikDakika": 15,
+        "pisirmeDakika": 25,
+        "toplamDakika": 40,
+        "kalori": 210,
+        "ikon": "ic_recipe_thumb_peach",
+        "kucukResim": "ic_recipe_thumb_peach",
+        "malzemeler": [
+          "600 g balkabağı",
+          "1 adet soğan",
+          "1 diş sarımsak",
+          "1 yemek kaşığı taze zencefil",
+          "2 yemek kaşığı zeytinyağı",
+          "4 su bardağı sebze suyu",
+          "1/2 su bardağı krema",
+          "Tuz, karabiber"
+        ],
+        "adimlarKadin": [
+          "Balkabağı ve soğanı küp doğrayıp zeytinyağında soteleyin.",
+          "Sarımsak ve zencefili ekleyip kokusu çıkana kadar pişirin.",
+          "Sebze suyunu ekleyip balkabakları yumuşayana dek kaynatın."
+        ],
+        "adimlarErkek": [
+          "Pişen çorbayı blenderdan geçirip krema ekleyin.",
+          "Tuz ve karabiberle tatlandırıp 5 dakika daha kaynatın.",
+          "Serviste kavrulmuş çekirdek ve krema ile süsleyin."
+        ]
+      },
+      {
+        "id": "corba_arabasi",
+        "isim": "Geleneksel Arabaşı Çorbası",
+        "hazirlikDakika": 30,
+        "pisirmeDakika": 45,
+        "toplamDakika": 75,
+        "kalori": 360,
+        "ikon": "ic_recipe_thumb_mint",
+        "kucukResim": "ic_recipe_thumb_mint",
+        "malzemeler": [
+          "500 g tavuk göğsü",
+          "1 adet soğan",
+          "1 yemek kaşığı biber salçası",
+          "1 yemek kaşığı domates salçası",
+          "1 yemek kaşığı un",
+          "8 su bardağı su",
+          "1 tatlı kaşığı toz kırmızı biber",
+          "Hamur için 2 su bardağı un"
+        ],
+        "adimlarKadin": [
+          "Tavukları haşlayıp didikleyin, suyunu saklayın.",
+          "Soğanı kavurup salça ve unu ekleyerek karıştırın.",
+          "Tavuk suyunu ekleyip kaynatın, baharatlarla tatlandırın."
+        ],
+        "adimlarErkek": [
+          "Hamur için un ve suyu kaynatarak helme kıvamına getirin ve tepsiye dökün.",
+          "Didiklenmiş tavuk etlerini çorbaya ekleyip 10 dakika daha pişirin.",
+          "Hamuru kareler halinde kesip çorbayla birlikte servis edin."
+        ]
+      },
+      {
+        "id": "corba_sogan",
+        "isim": "Karamelize Soğan Çorbası",
+        "hazirlikDakika": 20,
+        "pisirmeDakika": 40,
+        "toplamDakika": 60,
+        "kalori": 250,
+        "ikon": "ic_recipe_thumb_lilac",
+        "kucukResim": "ic_recipe_thumb_lilac",
+        "malzemeler": [
+          "4 adet büyük soğan",
+          "2 yemek kaşığı tereyağı",
+          "1 yemek kaşığı zeytinyağı",
+          "1 yemek kaşığı un",
+          "1 çay bardağı beyaz şarap",
+          "1 litre et suyu",
+          "Taze kekik",
+          "Tuz, karabiber"
+        ],
+        "adimlarKadin": [
+          "Soğanları ince dilimleyip tereyağı ve zeytinyağında karamelleştirin.",
+          "Unu ekleyip kısa süre kavurun, beyaz şarapla tencereyi deglaze edin.",
+          "Et suyunu ve kekik dalını ekleyip kaynamaya bırakın."
+        ],
+        "adimlarErkek": [
+          "Çorbayı kısık ateşte 20 dakika kaynatıp tuz karabiber ayarını yapın.",
+          "Fırına dayanıklı kaselere alıp üzerine tost ekmeği ve kaşar koyun.",
+          "Fırında peynir eriyene kadar gratine edip servis edin."
+        ]
+      },
+      {
+        "id": "corba_ispanakli_yogurt",
+        "isim": "Ispanaklı Yoğurt Çorbası",
+        "hazirlikDakika": 15,
+        "pisirmeDakika": 20,
+        "toplamDakika": 35,
+        "kalori": 190,
+        "ikon": "ic_recipe_thumb_sunrise",
+        "kucukResim": "ic_recipe_thumb_sunrise",
+        "malzemeler": [
+          "500 g ıspanak",
+          "1 su bardağı yoğurt",
+          "1 adet yumurta",
+          "2 yemek kaşığı un",
+          "5 su bardağı tavuk suyu",
+          "2 yemek kaşığı tereyağı",
+          "Sarımsak",
+          "Tuz"
+        ],
+        "adimlarKadin": [
+          "Yoğurt, yumurta ve unu çırparak terbiyeyi hazırlayın.",
+          "Ispanağı doğrayıp tereyağında hafifçe soldurun.",
+          "Tavuk suyunu ekleyip kaynatın ve terbiyeyi yavaşça karıştırarak ekleyin."
+        ],
+        "adimlarErkek": [
+          "Çorba koyulaştığında tuzunu ayarlayın.",
+          "Sarımsaklı tereyağ hazırlayıp üzerine gezdirin.",
+          "Servis kaselerini çıtır ekmekle tamamlayın."
+        ]
+      }
+    ]
+  },
+  {
+    "kategori": "tatli",
+    "tarifler": [
+      {
+        "id": "tatli_sutlac",
+        "isim": "Fırın Sütlaç",
+        "hazirlikDakika": 10,
+        "pisirmeDakika": 50,
+        "toplamDakika": 60,
+        "kalori": 310,
+        "ikon": "ic_recipe_thumb_peach",
+        "kucukResim": "ic_recipe_thumb_peach",
+        "malzemeler": [
+          "1 litre süt",
+          "1 çay bardağı pirinç",
+          "1 su bardağı toz şeker",
+          "2 yemek kaşığı pirinç unu",
+          "1 adet vanilya çubuğu",
+          "Üzeri için tarçın"
+        ],
+        "adimlarKadin": [
+          "Pirinçleri yıkayıp 2 su bardağı suyla yumuşayana kadar haşlayın.",
+          "Süt ve vanilyayı ekleyip karıştırarak kaynamaya bırakın.",
+          "Pirinç ununu az sütle açıp tencereye ilave edin ve şekerle tatlandırın."
+        ],
+        "adimlarErkek": [
+          "Kıvam alan sütlacı güveç kaplarına paylaştırın.",
+          "Fırın tepsisine kapları dizip yarısına kadar su doldurun.",
+          "Üstleri kızarana dek 200°C fırında pişirin ve tarçın serpin."
+        ]
+      },
+      {
+        "id": "tatli_kazan_dibi",
+        "isim": "Kazandibi",
+        "hazirlikDakika": 15,
+        "pisirmeDakika": 40,
+        "toplamDakika": 55,
+        "kalori": 320,
+        "ikon": "ic_recipe_thumb_mint",
+        "kucukResim": "ic_recipe_thumb_mint",
+        "malzemeler": [
+          "1 litre süt",
+          "1 su bardağı şeker",
+          "3 yemek kaşığı pirinç unu",
+          "2 yemek kaşığı nişasta",
+          "2 yemek kaşığı tereyağı",
+          "1 çay kaşığı damla sakızı"
+        ],
+        "adimlarKadin": [
+          "Süt, şeker, pirinç unu ve nişastayı pürüzsüz olana dek çırpın.",
+          "Damla sakızını havanda dövüp karışıma ekleyin.",
+          "Karışımı kısık ateşte sürekli karıştırarak muhallebi kıvamına getirin."
+        ],
+        "adimlarErkek": [
+          "Tepsiyi tereyağıyla yağlayıp tabanına pudra şekeri serpin.",
+          "Muhallebiyi tepsiye döküp yüzeyi kaynayınca hafifçe karamelize edin.",
+          "Soğutup dilimleyin ve spatula ile rulo şeklinde servis edin."
+        ]
+      },
+      {
+        "id": "tatli_baklava",
+        "isim": "Cevizli Baklava",
+        "hazirlikDakika": 60,
+        "pisirmeDakika": 40,
+        "toplamDakika": 100,
+        "kalori": 430,
+        "ikon": "ic_recipe_thumb_lilac",
+        "kucukResim": "ic_recipe_thumb_lilac",
+        "malzemeler": [
+          "500 g baklavalık yufka",
+          "300 g ceviz içi",
+          "250 g tereyağı",
+          "2 su bardağı toz şeker",
+          "2 su bardağı su",
+          "1 yemek kaşığı limon suyu"
+        ],
+        "adimlarKadin": [
+          "Cevizi rondoda çekip iç harcı hazırlayın.",
+          "Yufkaları tepsi boyunda kesip her katı tereyağıyla yağlayın.",
+          "Orta katlara ceviz serperek kat kat dizin."
+        ],
+        "adimlarErkek": [
+          "Baklavayı baklava dilimi şeklinde kesin.",
+          "Kalan tereyağını üzerine gezdirip 180°C fırında kızartın.",
+          "Şerbeti hazırlayıp ılıkken sıcak baklavaya dökün."
+        ]
+      },
+      {
+        "id": "tatli_sekerpare",
+        "isim": "Şekerpare",
+        "hazirlikDakika": 20,
+        "pisirmeDakika": 25,
+        "toplamDakika": 45,
+        "kalori": 310,
+        "ikon": "ic_recipe_thumb_sunrise",
+        "kucukResim": "ic_recipe_thumb_sunrise",
+        "malzemeler": [
+          "125 g tereyağı",
+          "1 su bardağı pudra şekeri",
+          "2 adet yumurta",
+          "2,5 su bardağı un",
+          "1 paket kabartma tozu",
+          "Şerbet için 3 su bardağı su"
+        ],
+        "adimlarKadin": [
+          "Tereyağı ve pudra şekerini krem kıvamına gelene dek çırpın.",
+          "Yumurtaları ekleyip unu ve kabartma tozunu ilave ederek yoğurun.",
+          "Hamurdan ceviz büyüklüğünde parçalar alıp tepsiye dizin."
+        ],
+        "adimlarErkek": [
+          "Hamurları 180°C fırında altın rengi alana kadar pişirin.",
+          "Şerbeti kaynatıp ılıtın ve fırından çıkan tatlıların üzerine dökün.",
+          "Tatlılar şerbeti çekince hindistan cevizi ile süsleyin."
+        ]
+      },
+      {
+        "id": "tatli_revani",
+        "isim": "Portakallı Revani",
+        "hazirlikDakika": 15,
+        "pisirmeDakika": 30,
+        "toplamDakika": 45,
+        "kalori": 290,
+        "ikon": "ic_recipe_thumb_sky",
+        "kucukResim": "ic_recipe_thumb_sky",
+        "malzemeler": [
+          "4 adet yumurta",
+          "1 su bardağı şeker",
+          "1 su bardağı irmik",
+          "1 su bardağı un",
+          "1 su bardağı yoğurt",
+          "1 portakal kabuğu rendesi",
+          "Şerbet için 3 su bardağı su"
+        ],
+        "adimlarKadin": [
+          "Yumurta ve şekeri beyazlaşana kadar çırpın.",
+          "Yoğurt, irmik, un ve portakal kabuğunu ekleyip karıştırın.",
+          "Yağlanmış tepsiye döküp üzerini düzeltin."
+        ],
+        "adimlarErkek": [
+          "Revaninin içini 180°C fırında pişirip soğumaya bırakın.",
+          "Şerbeti kaynatıp ılıtın ve soğuyan kekin üzerine dökün.",
+          "Serviste kaymak ve fıstıkla süsleyin."
+        ]
+      },
+      {
+        "id": "tatli_muhallebi_gul",
+        "isim": "Güllü Muhallebi",
+        "hazirlikDakika": 10,
+        "pisirmeDakika": 15,
+        "toplamDakika": 25,
+        "kalori": 250,
+        "ikon": "ic_recipe_thumb_peach",
+        "kucukResim": "ic_recipe_thumb_peach",
+        "malzemeler": [
+          "4 su bardağı süt",
+          "1 su bardağı şeker",
+          "1/2 su bardağı nişasta",
+          "1 yemek kaşığı gül suyu",
+          "1 yemek kaşığı tereyağı",
+          "Üzeri için gül yaprağı"
+        ],
+        "adimlarKadin": [
+          "Süt, şeker ve nişastayı karıştırarak tencerede pişirmeye başlayın.",
+          "Koyulaşınca tereyağı ve gül suyunu ekleyin.",
+          "Köpüğü alınmış karışımı kaselere paylaştırın."
+        ],
+        "adimlarErkek": [
+          "Kaseleri buzdolabında 2 saat soğutun.",
+          "Servis öncesi gül yaprakları ve file bademle süsleyin.",
+          "Yanında çıtır güllaç parçalarıyla servis edin."
+        ]
+      },
+      {
+        "id": "tatli_kunefe",
+        "isim": "Fıstıklı Künefe",
+        "hazirlikDakika": 20,
+        "pisirmeDakika": 20,
+        "toplamDakika": 40,
+        "kalori": 420,
+        "ikon": "ic_recipe_thumb_mint",
+        "kucukResim": "ic_recipe_thumb_mint",
+        "malzemeler": [
+          "500 g tel kadayıf",
+          "250 g tuzsuz künefe peyniri",
+          "200 g tereyağı",
+          "1 su bardağı toz Antep fıstığı",
+          "2 su bardağı şeker",
+          "2 su bardağı su",
+          "Yarım limon"
+        ],
+        "adimlarKadin": [
+          "Kadayıfı tereyağıyla harmanlayıp tel tel açın.",
+          "Şerbet için su, şeker ve limonu kaynatıp soğumaya bırakın.",
+          "Peyniri ince dilimleyip hazırda tutun."
+        ],
+        "adimlarErkek": [
+          "Tavayı tereyağıyla yağlayıp kadayıfın yarısını tabana yayın.",
+          "Peyniri serip kalan kadayıfla kapatın, kısık ateşte her iki tarafını kızartın.",
+          "Sıcak künefenin üzerine soğuk şerbeti döküp fıstıkla süsleyin."
+        ]
+      },
+      {
+        "id": "tatli_tavukgogsu",
+        "isim": "Tavuk Göğsü Tatlısı",
+        "hazirlikDakika": 25,
+        "pisirmeDakika": 20,
+        "toplamDakika": 45,
+        "kalori": 280,
+        "ikon": "ic_recipe_thumb_lilac",
+        "kucukResim": "ic_recipe_thumb_lilac",
+        "malzemeler": [
+          "500 ml süt",
+          "100 g haşlanmış tavuk göğsü",
+          "1/2 su bardağı şeker",
+          "3 yemek kaşığı nişasta",
+          "2 yemek kaşığı tereyağı",
+          "1 çay kaşığı tarçın"
+        ],
+        "adimlarKadin": [
+          "Haşlanmış tavuk etini didikleyip nişastayla birlikte robottan geçirin.",
+          "Süt ve şekeri tencerede kaynayana dek karıştırın.",
+          "Nişastalı karışımı ekleyip muhallebi kıvamına getirin."
+        ],
+        "adimlarErkek": [
+          "Kıvam alan tatlıyı cam kaba döküp üzerini düzeltin.",
+          "Oda sıcaklığına geldikten sonra buzdolabında soğutun.",
+          "Servis ederken tarçınla süsleyin."
+        ]
+      },
+      {
+        "id": "tatli_sobiyet",
+        "isim": "Şöbiyet",
+        "hazirlikDakika": 35,
+        "pisirmeDakika": 30,
+        "toplamDakika": 65,
+        "kalori": 360,
+        "ikon": "ic_recipe_thumb_sunrise",
+        "kucukResim": "ic_recipe_thumb_sunrise",
+        "malzemeler": [
+          "400 g baklavalık yufka",
+          "200 g kaymak",
+          "200 g Antep fıstığı",
+          "200 g tereyağı",
+          "2 su bardağı şeker",
+          "2 su bardağı su"
+        ],
+        "adimlarKadin": [
+          "Fıstıkları ince çekip kaymakla karıştırın.",
+          "Yufkaları üçgen olacak şekilde kesin.",
+          "Her üçgene tereyağı sürüp kaymaklı içten koyun."
+        ],
+        "adimlarErkek": [
+          "Üçgenleri kapatıp tepsiye dizin.",
+          "Üzerine kalan tereyağını gezdirip 190°C fırında kızartın.",
+          "Şerbeti ılıkken tatlıya dökün ve fıstık serpin."
+        ]
+      },
+      {
+        "id": "tatli_magnolia",
+        "isim": "Çilekli Magnolia",
+        "hazirlikDakika": 20,
+        "pisirmeDakika": 10,
+        "toplamDakika": 30,
+        "kalori": 320,
+        "ikon": "ic_recipe_thumb_sky",
+        "kucukResim": "ic_recipe_thumb_sky",
+        "malzemeler": [
+          "750 ml süt",
+          "1 çay bardağı şeker",
+          "3 yemek kaşığı un",
+          "2 yemek kaşığı mısır nişastası",
+          "1 paket vanilin",
+          "1 paket bebe bisküvisi",
+          "10 adet çilek"
+        ],
+        "adimlarKadin": [
+          "Süt, şeker, un ve nişastayı tencerede karıştırıp pişirin.",
+          "Koyulaşınca vanilin ve tereyağı ekleyerek çırpın.",
+          "Çilekleri dilimleyip hazırlayın."
+        ],
+        "adimlarErkek": [
+          "Bisküvileri rondoda çekip taban için hazırlayın.",
+          "Kaselere sırayla bisküvi, muhallebi ve çilek katları yapın.",
+          "Servisten önce 2 saat buzdolabında dinlendirin."
+        ]
+      }
+    ]
+  },
+  {
+    "kategori": "tavuk",
+    "tarifler": [
+      {
+        "id": "tavuk_tas_kebabi",
+        "isim": "Taş Kebabı",
+        "hazirlikDakika": 20,
+        "pisirmeDakika": 45,
+        "toplamDakika": 65,
+        "kalori": 480,
+        "ikon": "ic_recipe_thumb_peach",
+        "kucukResim": "ic_recipe_thumb_peach",
+        "malzemeler": [
+          "600 g tavuk but eti",
+          "2 adet soğan",
+          "2 adet patlıcan",
+          "2 adet domates",
+          "2 yemek kaşığı tereyağı",
+          "1 yemek kaşığı salça",
+          "Tuz, karabiber, kekik",
+          "1 su bardağı sıcak su"
+        ],
+        "adimlarKadin": [
+          "Soğanları tereyağında kavurup salçayı ekleyin.",
+          "Domatesleri küp doğrayıp tencereye ilave edin.",
+          "Patlıcanları alacalı soyup tuzlu suda bekletin."
+        ],
+        "adimlarErkek": [
+          "Tavuk etlerini kızgın tavada mühürleyin.",
+          "Patlıcanları kızartıp tencereye dizin, tavuk ve sosu ekleyin.",
+          "Kapağı kapalı şekilde 30 dakika kısık ateşte pişirin."
+        ]
+      },
+      {
+        "id": "tavuk_firinda_soslu",
+        "isim": "Fırında Sarımsaklı Soslu Tavuk",
+        "hazirlikDakika": 15,
+        "pisirmeDakika": 40,
+        "toplamDakika": 55,
+        "kalori": 520,
+        "ikon": "ic_recipe_thumb_mint",
+        "kucukResim": "ic_recipe_thumb_mint",
+        "malzemeler": [
+          "8 adet tavuk baget",
+          "4 diş sarımsak",
+          "1/2 çay bardağı zeytinyağı",
+          "1 yemek kaşığı yoğurt",
+          "1 tatlı kaşığı hardal",
+          "1 tatlı kaşığı kırmızı toz biber",
+          "Taze kekik",
+          "Tuz"
+        ],
+        "adimlarKadin": [
+          "Sarımsakları ezip yoğurt, hardal, baharat ve zeytinyağıyla sos hazırlayın.",
+          "Bagetleri sosa bulayıp buzdolabında 30 dakika dinlendirin.",
+          "Fırın tepsisini yağlı kağıtla hazırlayın."
+        ],
+        "adimlarErkek": [
+          "Marine edilmiş bagetleri tepsiye yerleştirip 200°C fırında pişirin.",
+          "Yarı pişme süresinde tepsiyi çevirerek eşit kızarmasını sağlayın.",
+          "Serviste kekik dalları ve limon dilimleri ekleyin."
+        ]
+      },
+      {
+        "id": "tavuk_sebzeli_guvec",
+        "isim": "Sebzeli Tavuk Güveç",
+        "hazirlikDakika": 25,
+        "pisirmeDakika": 50,
+        "toplamDakika": 75,
+        "kalori": 450,
+        "ikon": "ic_recipe_thumb_lilac",
+        "kucukResim": "ic_recipe_thumb_lilac",
+        "malzemeler": [
+          "600 g tavuk göğsü",
+          "2 adet patates",
+          "2 adet havuç",
+          "1 adet kabak",
+          "1 su bardağı bezelye",
+          "2 yemek kaşığı tereyağı",
+          "1 yemek kaşığı un",
+          "1 su bardağı tavuk suyu"
+        ],
+        "adimlarKadin": [
+          "Sebzeleri iri parçalar halinde doğrayın.",
+          "Tereyağında unu kavurup tavuk suyuyla beşamel benzeri sos hazırlayın.",
+          "Güveç kaplarını yağlayın."
+        ],
+        "adimlarErkek": [
+          "Tavukları küp doğrayıp mühürleyin.",
+          "Sebze ve tavukları güveçlere paylaştırıp sosu üzerine dökün.",
+          "200°C fırında 40 dakika pişirip sıcak servis edin."
+        ]
+      },
+      {
+        "id": "tavuk_pilic_topkapi",
+        "isim": "Piliç Topkapı",
+        "hazirlikDakika": 30,
+        "pisirmeDakika": 60,
+        "toplamDakika": 90,
+        "kalori": 560,
+        "ikon": "ic_recipe_thumb_sunrise",
+        "kucukResim": "ic_recipe_thumb_sunrise",
+        "malzemeler": [
+          "4 adet tavuk budu",
+          "1 su bardağı pirinç",
+          "2 yemek kaşığı tereyağı",
+          "1/2 su bardağı dolmalık fıstık",
+          "1/2 su bardağı kuş üzümü",
+          "1 çay kaşığı tarçın",
+          "Tuz, karabiber",
+          "1 yemek kaşığı biber salçası"
+        ],
+        "adimlarKadin": [
+          "Pirinç pilavını tereyağı, fıstık ve kuş üzümüyle hazırlayın.",
+          "Tarçın ve baharatlarla pilavı tatlandırın.",
+          "Tavuk butlarının kemiklerini çıkarıp açın."
+        ],
+        "adimlarErkek": [
+          "Butların içine pilav doldurup ip ile bağlayın.",
+          "Salça ve zeytinyağı karışımıyla butları fırça yardımıyla kaplayın.",
+          "Önceden ısıtılmış 190°C fırında 50 dakika pişirin."
+        ]
+      },
+      {
+        "id": "tavuk_incirli",
+        "isim": "İncirli Tavuk Sote",
+        "hazirlikDakika": 15,
+        "pisirmeDakika": 20,
+        "toplamDakika": 35,
+        "kalori": 430,
+        "ikon": "ic_recipe_thumb_sky",
+        "kucukResim": "ic_recipe_thumb_sky",
+        "malzemeler": [
+          "500 g tavuk göğsü",
+          "6 adet kuru incir",
+          "1 adet soğan",
+          "2 yemek kaşığı tereyağı",
+          "1 yemek kaşığı balzamik sirke",
+          "1 tatlı kaşığı bal",
+          "Tuz, karabiber",
+          "Taze kekik"
+        ],
+        "adimlarKadin": [
+          "İncirleri sıcak suda bekletip şeritler halinde doğrayın.",
+          "Soğanı tereyağında karamelize edin.",
+          "Balzamik ve bal ile sos tabanını oluşturun."
+        ],
+        "adimlarErkek": [
+          "Tavukları jülyen doğrayıp yüksek ateşte soteleyin.",
+          "İncirli sosla tavukları buluşturup birkaç dakika pişirin.",
+          "Serviste kekik dallarıyla süsleyin."
+        ]
+      },
+      {
+        "id": "tavuk_kapama",
+        "isim": "Tavuk Kapama",
+        "hazirlikDakika": 25,
+        "pisirmeDakika": 60,
+        "toplamDakika": 85,
+        "kalori": 500,
+        "ikon": "ic_recipe_thumb_peach",
+        "kucukResim": "ic_recipe_thumb_peach",
+        "malzemeler": [
+          "1 bütün tavuk",
+          "2 su bardağı pirinç",
+          "3 yemek kaşığı tereyağı",
+          "1 adet soğan",
+          "3 su bardağı tavuk suyu",
+          "1 tatlı kaşığı karabiber",
+          "2 adet defne yaprağı",
+          "Tuz"
+        ],
+        "adimlarKadin": [
+          "Pirinçleri tuzlu suda bekletip süzün.",
+          "Tavuk suyunu defne yapraklarıyla kaynatın.",
+          "Soğanı tereyağında kavurup pirinci ekleyin."
+        ],
+        "adimlarErkek": [
+          "Bütün tavuğu tuzlayıp fırın tepsisine yerleştirin.",
+          "Pirinci tavuk suyuyla yarı pişirip tepsiye yayın.",
+          "Üzerine tavuğu yerleştirip 190°C fırında kızarana kadar pişirin."
+        ]
+      },
+      {
+        "id": "tavuk_ciftlik",
+        "isim": "Kremalı Çiftlik Tavuğu",
+        "hazirlikDakika": 15,
+        "pisirmeDakika": 25,
+        "toplamDakika": 40,
+        "kalori": 470,
+        "ikon": "ic_recipe_thumb_mint",
+        "kucukResim": "ic_recipe_thumb_mint",
+        "malzemeler": [
+          "600 g kemiksiz tavuk but",
+          "200 ml krema",
+          "150 g mantar",
+          "1 su bardağı bezelye",
+          "2 yemek kaşığı tereyağı",
+          "1 yemek kaşığı un",
+          "1 dal biberiye",
+          "Tuz, karabiber"
+        ],
+        "adimlarKadin": [
+          "Mantarları dilimleyip tereyağında soteleyin.",
+          "Unu ekleyip hafifçe kavurduktan sonra kremayı ilave edin.",
+          "Bezelyeyi ekleyip sosu kaynatın."
+        ],
+        "adimlarErkek": [
+          "Tavuk butlarını mühürleyip sosun içine ekleyin.",
+          "Biberiye dalını yerleştirip kısık ateşte 15 dakika pişirin.",
+          "Serviste taze çekilmiş karabiber serpin."
+        ]
+      },
+      {
+        "id": "tavuk_firinda_narenciye",
+        "isim": "Narenciye Soslu Fırın Tavuk",
+        "hazirlikDakika": 20,
+        "pisirmeDakika": 50,
+        "toplamDakika": 70,
+        "kalori": 510,
+        "ikon": "ic_recipe_thumb_lilac",
+        "kucukResim": "ic_recipe_thumb_lilac",
+        "malzemeler": [
+          "1 kg tavuk kanat ve but karışımı",
+          "1 adet portakal",
+          "1 adet limon",
+          "3 yemek kaşığı bal",
+          "2 yemek kaşığı soya sosu",
+          "2 diş sarımsak",
+          "Taze biberiye",
+          "Tuz, pul biber"
+        ],
+        "adimlarKadin": [
+          "Narenciye suyunu sıkıp bal, soya ve sarımsakla marine hazırlayın.",
+          "Tavuğu marinasyona bulayıp en az 1 saat dinlendirin.",
+          "Fırın kabını yağlayın ve biberiye dallarını yerleştirin."
+        ],
+        "adimlarErkek": [
+          "Marine edilmiş tavukları 200°C fırında 40-45 dakika pişirin.",
+          "Pişerken arada kalan marine sosuyla tavukları fırça ile kaplayın.",
+          "Serviste portakal dilimleri ile süsleyin."
+        ]
+      },
+      {
+        "id": "tavuk_sote_anadolu",
+        "isim": "Anadolu Usulü Tavuk Sote",
+        "hazirlikDakika": 15,
+        "pisirmeDakika": 25,
+        "toplamDakika": 40,
+        "kalori": 440,
+        "ikon": "ic_recipe_thumb_sunrise",
+        "kucukResim": "ic_recipe_thumb_sunrise",
+        "malzemeler": [
+          "500 g tavuk göğsü",
+          "1 adet kırmızı biber",
+          "1 adet yeşil biber",
+          "2 adet domates",
+          "1 yemek kaşığı tereyağı",
+          "1 yemek kaşığı biber salçası",
+          "1 çay kaşığı kekik",
+          "Tuz, karabiber"
+        ],
+        "adimlarKadin": [
+          "Biberleri jülyen, domatesleri küp doğrayın.",
+          "Tereyağında salçayı kokusu çıkana kadar kavurun.",
+          "Sebzeleri salçalı karışıma ekleyip 5 dakika pişirin."
+        ],
+        "adimlarErkek": [
+          "Tavukları kuşbaşı doğrayıp yüksek ateşte soteleyin.",
+          "Sebzeli karışıma tavukları ekleyip baharatlayın.",
+          "Kısık ateşte 10 dakika daha pişirip servis edin."
+        ]
+      },
+      {
+        "id": "tavuk_kestaneli_pilav",
+        "isim": "Kestaneli Tavuk Pilavı",
+        "hazirlikDakika": 25,
+        "pisirmeDakika": 35,
+        "toplamDakika": 60,
+        "kalori": 520,
+        "ikon": "ic_recipe_thumb_sky",
+        "kucukResim": "ic_recipe_thumb_sky",
+        "malzemeler": [
+          "500 g tavuk göğsü",
+          "2 su bardağı pirinç",
+          "1 su bardağı haşlanmış kestane",
+          "1 adet soğan",
+          "2 yemek kaşığı tereyağı",
+          "3 su bardağı tavuk suyu",
+          "1/2 çay kaşığı tarçın",
+          "Tuz, karabiber"
+        ],
+        "adimlarKadin": [
+          "Pirinçleri ılık suda bekletip süzün.",
+          "Soğanı tereyağında kavurup kestaneleri ekleyin.",
+          "Tavuk suyunu ısıtıp hazırda tutun."
+        ],
+        "adimlarErkek": [
+          "Tavukları küp doğrayıp soteyin.",
+          "Pirinçleri tencereye ekleyip kavurun, tarçınla tatlandırın.",
+          "Tavuk suyu ekleyip demlenmeye bırakın ve servis edin."
+        ]
+      }
+    ]
+  },
+  {
+    "kategori": "balik",
+    "tarifler": [
+      {
+        "id": "balik_firin_levrek",
+        "isim": "Fırında Levrek",
+        "hazirlikDakika": 15,
+        "pisirmeDakika": 25,
+        "toplamDakika": 40,
+        "kalori": 320,
+        "ikon": "ic_recipe_thumb_peach",
+        "kucukResim": "ic_recipe_thumb_peach",
+        "malzemeler": [
+          "2 adet levrek",
+          "1 adet limon",
+          "2 diş sarımsak",
+          "3 yemek kaşığı zeytinyağı",
+          "1 dal biberiye",
+          "1 dal taze kekik",
+          "Tuz, karabiber",
+          "1 adet kırmızı soğan"
+        ],
+        "adimlarKadin": [
+          "Balığın içini temizleyip kağıt havluyla kurulayın.",
+          "Limon dilimleri, sarımsak ve otlarla balığı doldurun.",
+          "Zeytinyağı ve baharatla dışını ovun."
+        ],
+        "adimlarErkek": [
+          "Soğan ve patates dilimleriyle fırın tepsisini hazırlayın.",
+          "Balıkları 200°C fırında 20-25 dakika pişirin.",
+          "Serviste limon suyu gezdirip roka ile sunun."
+        ]
+      },
+      {
+        "id": "balik_hamsi_tava",
+        "isim": "Hamsi Tava",
+        "hazirlikDakika": 20,
+        "pisirmeDakika": 15,
+        "toplamDakika": 35,
+        "kalori": 380,
+        "ikon": "ic_recipe_thumb_mint",
+        "kucukResim": "ic_recipe_thumb_mint",
+        "malzemeler": [
+          "600 g hamsi",
+          "1 su bardağı mısır unu",
+          "1/2 çay bardağı sıvı yağ",
+          "1 tatlı kaşığı tuz",
+          "1 tatlı kaşığı pul biber",
+          "1 limon",
+          "Maydanoz"
+        ],
+        "adimlarKadin": [
+          "Hamsileri temizleyip iyice yıkayın.",
+          "Mısır unu, tuz ve pul biberi karıştırın.",
+          "Hamsileri una bulayıp fazla unu silkeleyin."
+        ],
+        "adimlarErkek": [
+          "Tavayı yağlayıp hamsileri yan yana dizin.",
+          "Her iki yüzünü de altın rengi olana kadar kızartın.",
+          "Serviste limon ve maydanozla sunun."
+        ]
+      },
+      {
+        "id": "balik_somon_izgara",
+        "isim": "Izgara Somon",
+        "hazirlikDakika": 10,
+        "pisirmeDakika": 15,
+        "toplamDakika": 25,
+        "kalori": 410,
+        "ikon": "ic_recipe_thumb_lilac",
+        "kucukResim": "ic_recipe_thumb_lilac",
+        "malzemeler": [
+          "4 dilim somon",
+          "2 yemek kaşığı zeytinyağı",
+          "1 yemek kaşığı bal",
+          "1 yemek kaşığı soya sosu",
+          "1 diş sarımsak",
+          "Taze dereotu",
+          "Tuz, karabiber"
+        ],
+        "adimlarKadin": [
+          "Zeytinyağı, bal, soya ve ezilmiş sarımsakla marine hazırlayın.",
+          "Somonları marineye bulayıp 15 dakika bekletin.",
+          "Dereotunu kıyıp servis için hazırlayın."
+        ],
+        "adimlarErkek": [
+          "Izgara tavasını ısıtıp somonları kızartın.",
+          "Her yüzünü 4-5 dakika pişirip dışını çıtır bırakın.",
+          "Serviste dereotu ve limon ekleyin."
+        ]
+      },
+      {
+        "id": "balik_bugulama_lufer",
+        "isim": "Lüfer Buğulama",
+        "hazirlikDakika": 20,
+        "pisirmeDakika": 25,
+        "toplamDakika": 45,
+        "kalori": 350,
+        "ikon": "ic_recipe_thumb_sunrise",
+        "kucukResim": "ic_recipe_thumb_sunrise",
+        "malzemeler": [
+          "2 adet lüfer",
+          "2 adet domates",
+          "2 adet soğan",
+          "2 adet yeşil biber",
+          "1 çay bardağı zeytinyağı",
+          "1 adet limon",
+          "Tuz, karabiber",
+          "1 demet maydanoz"
+        ],
+        "adimlarKadin": [
+          "Sebzeleri halka halka doğrayın.",
+          "Balığı temizleyip tuzlayın.",
+          "Fırın tepsisine sebze yatak hazırlayın."
+        ],
+        "adimlarErkek": [
+          "Balıkları sebzelerin üzerine yerleştirip zeytinyağı ve limon gezdirin.",
+          "180°C fırında 25 dakika pişirin.",
+          "Serviste maydanozla süsleyin."
+        ]
+      },
+      {
+        "id": "balik_palamut_pilaki",
+        "isim": "Palamut Pilaki",
+        "hazirlikDakika": 20,
+        "pisirmeDakika": 35,
+        "toplamDakika": 55,
+        "kalori": 370,
+        "ikon": "ic_recipe_thumb_sky",
+        "kucukResim": "ic_recipe_thumb_sky",
+        "malzemeler": [
+          "2 adet palamut",
+          "2 adet havuç",
+          "2 adet patates",
+          "2 adet soğan",
+          "4 diş sarımsak",
+          "1 çay bardağı zeytinyağı",
+          "1 yemek kaşığı salça",
+          "1 bardak su"
+        ],
+        "adimlarKadin": [
+          "Sebzeleri iri parçalar halinde doğrayın.",
+          "Zeytinyağında soğan ve sarımsağı kavurun, salçayı ekleyin.",
+          "Sebzeleri tencereye alıp hafifçe soteleyin."
+        ],
+        "adimlarErkek": [
+          "Palamut dilimlerini ekleyip üzerine su ekleyin.",
+          "Kısık ateşte balık pişene kadar yaklaşık 25 dakika pişirin.",
+          "Serviste limon ve maydanozla süsleyin."
+        ]
+      },
+      {
+        "id": "balik_midye_dolma",
+        "isim": "Midye Dolma",
+        "hazirlikDakika": 40,
+        "pisirmeDakika": 35,
+        "toplamDakika": 75,
+        "kalori": 300,
+        "ikon": "ic_recipe_thumb_peach",
+        "kucukResim": "ic_recipe_thumb_peach",
+        "malzemeler": [
+          "40 adet midye",
+          "2 su bardağı pirinç",
+          "2 adet soğan",
+          "1/2 su bardağı dolmalık fıstık",
+          "1/2 su bardağı kuş üzümü",
+          "3 yemek kaşığı zeytinyağı",
+          "Tarçın, yenibahar",
+          "Limon"
+        ],
+        "adimlarKadin": [
+          "Soğanı zeytinyağında kavurup fıstık ve pirinci ekleyin.",
+          "Kuş üzümü ve baharatlarla iç pilavı hazırlayın.",
+          "Midyeleri temizleyip kabuklarını açın."
+        ],
+        "adimlarErkek": [
+          "İç pilavı midyelere paylaştırıp kapatın.",
+          "Tencerede dizip üzerini geçmeyecek kadar su ekleyin.",
+          "Kısık ateşte 30 dakika pişirip limonla servis edin."
+        ]
+      },
+      {
+        "id": "balik_kalkan_tava",
+        "isim": "Kalkan Şinitzel",
+        "hazirlikDakika": 25,
+        "pisirmeDakika": 20,
+        "toplamDakika": 45,
+        "kalori": 360,
+        "ikon": "ic_recipe_thumb_mint",
+        "kucukResim": "ic_recipe_thumb_mint",
+        "malzemeler": [
+          "600 g kalkan fileto",
+          "1 su bardağı galeta unu",
+          "2 adet yumurta",
+          "1 su bardağı un",
+          "1 çay bardağı ayçiçek yağı",
+          "Tuz, karabiber",
+          "1 limon"
+        ],
+        "adimlarKadin": [
+          "Filetoları porsiyonlara ayırıp tuzlayın.",
+          "Pane için un, çırpılmış yumurta ve galeta ununu hazır edin.",
+          "Limon dilimlerini servis için hazırlayın."
+        ],
+        "adimlarErkek": [
+          "Balıkları sırasıyla una, yumurtaya ve galeta ununa bulayın.",
+          "Yağda her iki tarafını 3-4 dakika kızartın.",
+          "Kağıt havluda süzdürüp limonla servis edin."
+        ]
+      },
+      {
+        "id": "balik_tursu_sardalya",
+        "isim": "Sardalya Turşusu",
+        "hazirlikDakika": 30,
+        "pisirmeDakika": 0,
+        "toplamDakika": 30,
+        "kalori": 250,
+        "ikon": "ic_recipe_thumb_lilac",
+        "kucukResim": "ic_recipe_thumb_lilac",
+        "malzemeler": [
+          "1 kg sardalya",
+          "1 su bardağı üzüm sirkesi",
+          "1 su bardağı su",
+          "5 diş sarımsak",
+          "1 yemek kaşığı tuz",
+          "2 defne yaprağı",
+          "10 adet tane karabiber",
+          "1 tatlı kaşığı kırmızı biber"
+        ],
+        "adimlarKadin": [
+          "Sardalyaların kılçıklarını ayıklayıp fileto çıkarın.",
+          "Sirkeli turşu suyunu sarımsak ve baharatlarla hazırlayın.",
+          "Cam kavanozları sterilize edin."
+        ],
+        "adimlarErkek": [
+          "Balıkları kavanoza dizip turşu suyunu üzerine dökün.",
+          "Kavanozu kapatıp buzdolabında en az 24 saat dinlendirin.",
+          "Serviste zeytinyağı ve ince doğranmış soğan ekleyin."
+        ]
+      },
+      {
+        "id": "balik_tekir_tava",
+        "isim": "Tekir Balığı Tava",
+        "hazirlikDakika": 15,
+        "pisirmeDakika": 12,
+        "toplamDakika": 27,
+        "kalori": 330,
+        "ikon": "ic_recipe_thumb_sunrise",
+        "kucukResim": "ic_recipe_thumb_sunrise",
+        "malzemeler": [
+          "500 g tekir balığı",
+          "1 su bardağı mısır unu",
+          "1 tatlı kaşığı tuz",
+          "1/2 tatlı kaşığı karabiber",
+          "1 çay bardağı ayçiçek yağı",
+          "1 adet limon",
+          "Taze roka"
+        ],
+        "adimlarKadin": [
+          "Balıkları temizleyip kurulayın.",
+          "Mısır unu ve baharatları karıştırın.",
+          "Roka ve limonu servis için hazırlayın."
+        ],
+        "adimlarErkek": [
+          "Balıkları una bulayıp tavada kızartın.",
+          "Her iki yüzünü 3-4 dakika pişirip çıtır hale getirin.",
+          "Serviste roka ve limonla sunun."
+        ]
+      },
+      {
+        "id": "balik_firinda_somon_teriyaki",
+        "isim": "Teriyaki Soslu Fırın Somon",
+        "hazirlikDakika": 15,
+        "pisirmeDakika": 18,
+        "toplamDakika": 33,
+        "kalori": 400,
+        "ikon": "ic_recipe_thumb_sky",
+        "kucukResim": "ic_recipe_thumb_sky",
+        "malzemeler": [
+          "4 dilim somon",
+          "3 yemek kaşığı soya sosu",
+          "2 yemek kaşığı bal",
+          "1 yemek kaşığı susam yağı",
+          "1 yemek kaşığı rendelenmiş zencefil",
+          "1 diş sarımsak",
+          "Susam",
+          "Taze soğan"
+        ],
+        "adimlarKadin": [
+          "Soya, bal, zencefil ve sarımsakla teriyaki sos hazırlayın.",
+          "Somonları sosla kaplayıp 15 dakika marine edin.",
+          "Susam ve ince doğranmış taze soğanı hazırlayın."
+        ],
+        "adimlarErkek": [
+          "Somonları fırın kağıdı üzerine yerleştirip 200°C fırında 15-18 dakika pişirin.",
+          "Pişen balıkların üzerine sosundan gezdirin.",
+          "Serviste susam ve taze soğan serpin."
+        ]
+      }
+    ]
+  },
+  {
+    "kategori": "salata",
+    "tarifler": [
+      {
+        "id": "salata_coban",
+        "isim": "Çoban Salata",
+        "hazirlikDakika": 15,
+        "pisirmeDakika": 0,
+        "toplamDakika": 15,
+        "kalori": 180,
+        "ikon": "ic_recipe_thumb_peach",
+        "kucukResim": "ic_recipe_thumb_peach",
+        "malzemeler": [
+          "3 adet domates",
+          "2 adet salatalık",
+          "1 adet kırmızı biber",
+          "1 adet kuru soğan",
+          "1/2 demet maydanoz",
+          "4 yemek kaşığı zeytinyağı",
+          "1 yemek kaşığı nar ekşisi",
+          "Tuz"
+        ],
+        "adimlarKadin": [
+          "Domates ve salatalıkları küp doğrayın.",
+          "Soğanı ince piyazlık doğrayıp tuzla ovalayın.",
+          "Maydanozu ince kıyıp sebzelerle harmanlayın."
+        ],
+        "adimlarErkek": [
+          "Zeytinyağı, nar ekşisi ve tuzla sos hazırlayın.",
+          "Sebzelerin üzerine gezdirip nazikçe karıştırın.",
+          "Serviste sumak ve limon dilimleri ekleyin."
+        ]
+      },
+      {
+        "id": "salata_gavurdagi",
+        "isim": "Gavurdağı Salatası",
+        "hazirlikDakika": 20,
+        "pisirmeDakika": 0,
+        "toplamDakika": 20,
+        "kalori": 220,
+        "ikon": "ic_recipe_thumb_mint",
+        "kucukResim": "ic_recipe_thumb_mint",
+        "malzemeler": [
+          "4 adet domates",
+          "2 adet salatalık",
+          "1 adet kapya biber",
+          "1 adet yeşil biber",
+          "1 avuç ceviz",
+          "1 yemek kaşığı nar ekşisi",
+          "4 yemek kaşığı zeytinyağı",
+          "1 tatlı kaşığı sumak"
+        ],
+        "adimlarKadin": [
+          "Domatesleri minik küpler halinde doğrayın.",
+          "Biber ve salatalıkları aynı boyda doğrayın.",
+          "Cevizleri iri kıyıp salata kabına alın."
+        ],
+        "adimlarErkek": [
+          "Zeytinyağı, nar ekşisi ve sumağı çırparak sos hazırlayın.",
+          "Sebzelerin üzerine döküp karıştırın.",
+          "Serviste ceviz parçalarıyla süsleyin."
+        ]
+      },
+      {
+        "id": "salata_piyaz",
+        "isim": "Antalya Usulü Piyaz",
+        "hazirlikDakika": 25,
+        "pisirmeDakika": 10,
+        "toplamDakika": 35,
+        "kalori": 260,
+        "ikon": "ic_recipe_thumb_lilac",
+        "kucukResim": "ic_recipe_thumb_lilac",
+        "malzemeler": [
+          "2 su bardağı haşlanmış kuru fasulye",
+          "2 adet yumurta",
+          "1 adet kırmızı soğan",
+          "1 demet maydanoz",
+          "2 yemek kaşığı tahin",
+          "2 yemek kaşığı sirke",
+          "3 yemek kaşığı zeytinyağı",
+          "1 diş sarımsak"
+        ],
+        "adimlarKadin": [
+          "Yumurtaları haşlayıp dilimleyin.",
+          "Soğanı piyazlık doğrayıp tuzla ovun.",
+          "Tahin, sirke ve sarımsakla sosu hazırlayın."
+        ],
+        "adimlarErkek": [
+          "Fasulyeleri geniş kaseye alın, soğan ve maydanozu ekleyin.",
+          "Hazırlanan sosu salatanın üzerine gezdirin.",
+          "Yumurta dilimleriyle süsleyerek servis edin."
+        ]
+      },
+      {
+        "id": "salata_kisir",
+        "isim": "Nar Ekşili Kısır",
+        "hazirlikDakika": 25,
+        "pisirmeDakika": 10,
+        "toplamDakika": 35,
+        "kalori": 280,
+        "ikon": "ic_recipe_thumb_sunrise",
+        "kucukResim": "ic_recipe_thumb_sunrise",
+        "malzemeler": [
+          "2 su bardağı ince bulgur",
+          "2 yemek kaşığı domates salçası",
+          "1 yemek kaşığı biber salçası",
+          "1/2 su bardağı zeytinyağı",
+          "1 adet kuru soğan",
+          "1 demet taze soğan",
+          "1 demet maydanoz",
+          "Nar ekşisi"
+        ],
+        "adimlarKadin": [
+          "Bulguru kaynar suyla ıslatıp üstünü kapatın.",
+          "Soğanı zeytinyağında salçalarla kavurun.",
+          "Maydanoz ve taze soğanı ince doğrayın."
+        ],
+        "adimlarErkek": [
+          "Şişen bulguru salça karışımıyla harmanlayın.",
+          "Yeşillikleri ve nar ekşisini ekleyip karıştırın.",
+          "Serviste limon dilimleriyle sunun."
+        ]
+      },
+      {
+        "id": "salata_sezars",
+        "isim": "Yoğurtlu Sezar Salata",
+        "hazirlikDakika": 20,
+        "pisirmeDakika": 10,
+        "toplamDakika": 30,
+        "kalori": 290,
+        "ikon": "ic_recipe_thumb_sky",
+        "kucukResim": "ic_recipe_thumb_sky",
+        "malzemeler": [
+          "1 baş marul",
+          "2 dilim kızarmış ekmek",
+          "150 g ızgara tavuk",
+          "3 yemek kaşığı süzme yoğurt",
+          "2 yemek kaşığı zeytinyağı",
+          "1 diş sarımsak",
+          "1 yemek kaşığı limon suyu",
+          "Parmesan"
+        ],
+        "adimlarKadin": [
+          "Yoğurt, sarımsak ve limonla sosu çırpın.",
+          "Marulu iri parçalara bölün.",
+          "Tavuğu şerit halinde doğrayın."
+        ],
+        "adimlarErkek": [
+          "Marul, tavuk ve krutonları büyük kaseye alın.",
+          "Sosu ekleyip parmesan rendeleyin.",
+          "Serviste taze çekilmiş karabiber serpin."
+        ]
+      },
+      {
+        "id": "salata_patlican",
+        "isim": "Köz Patlıcan Salatası",
+        "hazirlikDakika": 20,
+        "pisirmeDakika": 25,
+        "toplamDakika": 45,
+        "kalori": 230,
+        "ikon": "ic_recipe_thumb_peach",
+        "kucukResim": "ic_recipe_thumb_peach",
+        "malzemeler": [
+          "4 adet patlıcan",
+          "2 adet kırmızı biber",
+          "2 diş sarımsak",
+          "3 yemek kaşığı zeytinyağı",
+          "1 yemek kaşığı nar ekşisi",
+          "1 yemek kaşığı limon suyu",
+          "Tuz, karabiber",
+          "Maydanoz"
+        ],
+        "adimlarKadin": [
+          "Patlıcan ve biberleri közleyip kabuklarını soyun.",
+          "Sarımsakları ezip zeytinyağıyla karıştırın.",
+          "Sebzeleri doğrayıp sosla harmanlayın."
+        ],
+        "adimlarErkek": [
+          "Servis tabağına salatayı yayın.",
+          "Nar ekşisi ve limonla son dokunuşu yapın.",
+          "Maydanoz yapraklarıyla süsleyin."
+        ]
+      },
+      {
+        "id": "salata_bulgur_kinoalı",
+        "isim": "Kinoa ve Bulgurlu Salata",
+        "hazirlikDakika": 25,
+        "pisirmeDakika": 15,
+        "toplamDakika": 40,
+        "kalori": 310,
+        "ikon": "ic_recipe_thumb_mint",
+        "kucukResim": "ic_recipe_thumb_mint",
+        "malzemeler": [
+          "1 su bardağı kinoa",
+          "1 su bardağı ince bulgur",
+          "1 adet salatalık",
+          "1 adet kırmızı biber",
+          "1/2 demet dereotu",
+          "1/2 demet maydanoz",
+          "4 yemek kaşığı zeytinyağı",
+          "1 adet limon"
+        ],
+        "adimlarKadin": [
+          "Kinoayı haşlayıp süzün.",
+          "Bulguru sıcak suyla demleyin.",
+          "Yeşillikleri ince kıyın."
+        ],
+        "adimlarErkek": [
+          "Kinoa ve bulguru büyük kapta birleştirin.",
+          "Sebzeleri ekleyip zeytinyağı ve limonla tatlandırın.",
+          "Serviste nar taneleri ekleyin."
+        ]
+      },
+      {
+        "id": "salata_yesil_elmali",
+        "isim": "Yeşil Elmalı Ispanak Salatası",
+        "hazirlikDakika": 15,
+        "pisirmeDakika": 0,
+        "toplamDakika": 15,
+        "kalori": 200,
+        "ikon": "ic_recipe_thumb_lilac",
+        "kucukResim": "ic_recipe_thumb_lilac",
+        "malzemeler": [
+          "2 avuç bebek ıspanak",
+          "1 adet yeşil elma",
+          "1/2 su bardağı ceviz",
+          "1/3 su bardağı beyaz peynir",
+          "2 yemek kaşığı zeytinyağı",
+          "1 yemek kaşığı elma sirkesi",
+          "1 tatlı kaşığı bal",
+          "Tuz"
+        ],
+        "adimlarKadin": [
+          "Elmayı ince dilimleyin.",
+          "Cevizi hafifçe kavurun.",
+          "Sos için zeytinyağı, sirke ve balı çırpın."
+        ],
+        "adimlarErkek": [
+          "Ispanak yapraklarını servis tabağına yayın.",
+          "Elma, ceviz ve peynir parçalarını ekleyin.",
+          "Sosu gezdirip hemen servis edin."
+        ]
+      },
+      {
+        "id": "salata_narli_tabule",
+        "isim": "Narlı Tabule",
+        "hazirlikDakika": 20,
+        "pisirmeDakika": 5,
+        "toplamDakika": 25,
+        "kalori": 240,
+        "ikon": "ic_recipe_thumb_sunrise",
+        "kucukResim": "ic_recipe_thumb_sunrise",
+        "malzemeler": [
+          "1 su bardağı ince bulgur",
+          "1 adet nar",
+          "1 demet maydanoz",
+          "1 demet taze nane",
+          "2 adet domates",
+          "4 yemek kaşığı zeytinyağı",
+          "2 yemek kaşığı limon suyu",
+          "Tuz"
+        ],
+        "adimlarKadin": [
+          "Bulguru kaynar suyla ıslatın.",
+          "Narı ayıklayıp tanelerini çıkarın.",
+          "Nane ve maydanozu ince kıyın."
+        ],
+        "adimlarErkek": [
+          "Tüm malzemeleri geniş kaseye alın.",
+          "Zeytinyağı ve limonla tatlandırıp karıştırın.",
+          "Serviste nar tanelerini üstte bırakın."
+        ]
+      },
+      {
+        "id": "salata_beyaz_lahana",
+        "isim": "Yoğurtlu Beyaz Lahana Salatası",
+        "hazirlikDakika": 15,
+        "pisirmeDakika": 0,
+        "toplamDakika": 15,
+        "kalori": 210,
+        "ikon": "ic_recipe_thumb_sky",
+        "kucukResim": "ic_recipe_thumb_sky",
+        "malzemeler": [
+          "1/2 küçük beyaz lahana",
+          "1 adet havuç",
+          "1 su bardağı süzme yoğurt",
+          "2 yemek kaşığı mayonez",
+          "1 diş sarımsak",
+          "2 yemek kaşığı zeytinyağı",
+          "Tuz, karabiber",
+          "Dereotu"
+        ],
+        "adimlarKadin": [
+          "Lahanayı ince jülyen doğrayıp tuzla ovalayın.",
+          "Havucu rendeleyin.",
+          "Yoğurt, mayonez ve sarımsakla sosu hazırlayın."
+        ],
+        "adimlarErkek": [
+          "Lahana ve havucu sosla karıştırın.",
+          "Zeytinyağı gezdirip dereotu ekleyin.",
+          "Servis kasesine alıp soğuk sunun."
+        ]
+      }
+    ]
+  }
+]
