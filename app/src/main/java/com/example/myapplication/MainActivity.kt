@@ -119,7 +119,9 @@ private fun YemekYapalimmiApp() {
 
                 is AppScreen.CategorySelection -> {
                     BackHandler { currentScreen = AppScreen.RoleSelection }
-                    CategorySelectionScreen(
+
+                    CategoryScreen(
+
                         role = screen.role,
                         categories = categories,
                         onCategorySelected = { category ->
@@ -143,7 +145,9 @@ private fun YemekYapalimmiApp() {
 
                 is AppScreen.RecipeDetail -> {
                     BackHandler { currentScreen = AppScreen.RecipeList(screen.role, screen.category) }
-                    RecipeDetailScreen(
+
+                    RecipeScreen(
+
                         role = screen.role,
                         category = screen.category,
                         recipe = screen.recipe,
@@ -248,7 +252,9 @@ private fun RoleCard(role: ChefRole, modifier: Modifier = Modifier, onClick: () 
 }
 
 @Composable
-private fun CategorySelectionScreen(
+
+private fun CategoryScreen(
+
     role: ChefRole,
     categories: List<RecipeCategory>,
     onCategorySelected: (RecipeCategory) -> Unit,
@@ -439,7 +445,8 @@ private fun RecipeCard(category: RecipeCategory, recipe: Recipe, onClick: () -> 
 }
 
 @Composable
-private fun RecipeDetailScreen(
+
+private fun RecipeScreen(
     role: ChefRole,
     category: RecipeCategory,
     recipe: Recipe,
@@ -571,7 +578,9 @@ private fun InstructionCard(
     steps: List<String>,
     isHighlighted: Boolean,
     showSteps: Boolean = true,
-    extraContent: (ColumnScope.(Boolean) -> Unit)? = null
+
+    extraContent: (@Composable ColumnScope.(Boolean) -> Unit)? = null
+
 ) {
     val shape = RoundedCornerShape(28.dp)
     Card(
