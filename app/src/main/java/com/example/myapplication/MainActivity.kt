@@ -11,12 +11,18 @@ import androidx.compose.animation.fadeOut
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
+
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ColumnScope
+
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
+
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -34,15 +40,34 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.material3.Button
+
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.Add
+import androidx.compose.material.icons.outlined.FavoriteBorder
+import androidx.compose.material.icons.outlined.Home
+import androidx.compose.material.icons.outlined.NotificationsNone
+import androidx.compose.material.icons.outlined.Person
+import androidx.compose.material.icons.outlined.RestaurantMenu
+
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.IconButton
+
+import androidx.compose.material3.Icon
+
+
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+
+import androidx.compose.material3.NavigationBar
+import androidx.compose.material3.NavigationBarItem
+import androidx.compose.material3.NavigationBarItemDefaults
+import androidx.compose.material3.TopAppBar
+
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.rememberTopAppBarState
 import androidx.compose.runtime.Composable
@@ -53,7 +78,9 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+
 import androidx.compose.ui.draw.shadow
+
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
@@ -69,6 +96,7 @@ import com.example.myapplication.model.RecipeRepository
 import com.example.myapplication.ui.theme.DeepIndigo
 import com.example.myapplication.ui.theme.FrostedWhite
 import com.example.myapplication.ui.theme.MyApplicationTheme
+import com.example.myapplication.ui.theme.PastelMint
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -91,7 +119,8 @@ private sealed class AppScreen {
 
 @Composable
 private fun YemekYapalimmiApp() {
-    val categories = remember { RecipeRepository.categories }
+    val categories = remember { RecipeRepository.loadCategories() }
+
     var currentScreen by remember { mutableStateOf<AppScreen>(AppScreen.RoleSelection) }
 
     val roleForBackground = when (val screen = currentScreen) {
@@ -113,13 +142,16 @@ private fun YemekYapalimmiApp() {
                 .background(Brush.verticalGradient(gradient))
         ) {
             when (val screen = currentScreen) {
-                AppScreen.RoleSelection -> RoleSelectionScreen(onRoleSelected = {
-                    currentScreen = AppScreen.CategorySelection(it)
-                })
+
+                AppScreen.RoleSelection -> RoleSelectionScreen(
+                    categories = categories,
+                    onRoleSelected = {
+                        currentScreen = AppScreen.CategorySelection(it)
+                    }
+                )
 
                 is AppScreen.CategorySelection -> {
                     BackHandler { currentScreen = AppScreen.RoleSelection }
-
                     CategoryScreen(
 
                         role = screen.role,
@@ -143,53 +175,73 @@ private fun YemekYapalimmiApp() {
                     )
                 }
 
-                is AppScreen.RecipeDetail -> {
-                    BackHandler { currentScreen = AppScreen.RecipeList(screen.role, screen.category) }
+is AppScreen.RecipeDetail -> {
+    BackHandler { currentScreen = AppScreen.RecipeList(screen.role, screen.category) }
+    RecipeScreen(
+        role = screen.role,
+        category = screen.category,
+        recipe = screen.recipe,
+        onBack = { currentScreen = AppScreen.RecipeList(screen.role, screen.category) }
+    )
+}
+}
+}
+}
+}
 
-                    RecipeScreen(
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
+@Composable
+private fun RoleSelectionScreen(
+    categories: List<RecipeCategory>,
+    onRoleSelected: (ChefRole) -> Unit
+) {
+    val popularRecipes = remember(categories) {
+        categories
+            .flatMap { it.recipes }
+            .distinctBy { it.id }
+            .take(6)
+    }
 
-                        role = screen.role,
-                        category = screen.category,
-                        recipe = screen.recipe,
-                        onBack = { currentScreen = AppScreen.RecipeList(screen.role, screen.category) }
+    Scaffold(
+        modifier = Modifier.fillMaxSize(),
+        containerColor = PastelMint.copy(alpha = 0.12f),
+        topBar = { HomeTopBar() },
+        bottomBar = { HomeBottomBar() }
+    ) { innerPadding ->
+        Column(
+            modifier = Modifier
+                .padding(innerPadding)
+                .fillMaxSize()
+                .verticalScroll(rememberScrollState())
+                .padding(horizontal = 24.dp, vertical = 24.dp),
+            verticalArrangement = Arrangement.spacedBy(24.dp)
+        ) {
+            Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                Text(
+                    text = "Hoş geldin şef!",
+                    style = MaterialTheme.typography.titleMedium.copy(
+                        color = DeepIndigo,
+                        fontWeight = FontWeight.Bold
                     )
-                }
+                )
+                Text(
+                    text = "Rolünü seç, pastel mutfağı keşfet.",
+                    style = MaterialTheme.typography.bodyMedium.copy(
+                        color = DeepIndigo.copy(alpha = 0.7f)
+                    )
+                )
             }
         }
     }
 }
 
-@Composable
-private fun RoleSelectionScreen(onRoleSelected: (ChefRole) -> Unit) {
-    Box(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(horizontal = 24.dp, vertical = 48.dp),
-        contentAlignment = Alignment.Center
-    ) {
-        Column(
-            modifier = Modifier.fillMaxWidth(),
-            horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.spacedBy(32.dp)
-        ) {
-            Text(
-                text = "Yemek Yapalım mı?",
-                style = MaterialTheme.typography.headlineLarge.copy(
-                    color = DeepIndigo,
-                    fontWeight = FontWeight.Bold
-                ),
-                textAlign = TextAlign.Center
-            )
-            Text(
-                text = "Tarifi paylaş, birlikte tamamlayalım",
-                style = MaterialTheme.typography.bodyLarge.copy(
-                    color = DeepIndigo.copy(alpha = 0.7f)
-                ),
-                textAlign = TextAlign.Center
-            )
+                    )
+                )
+            }
+
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.spacedBy(24.dp)
+                horizontalArrangement = Arrangement.spacedBy(16.dp)
             ) {
                 RoleCard(role = ChefRole.Female, modifier = Modifier.weight(1f)) {
                     onRoleSelected(ChefRole.Female)
@@ -198,63 +250,284 @@ private fun RoleSelectionScreen(onRoleSelected: (ChefRole) -> Unit) {
                     onRoleSelected(ChefRole.Male)
                 }
             }
+
+            HomeSectionHeader(text = "Kategoriler")
+            FlowRow(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(16.dp),
+                verticalArrangement = Arrangement.spacedBy(16.dp),
+                maxItemsInEachRow = 2
+            ) {
+                categories.forEach { category ->
+                    CategoryPreviewCard(
+                        category = category,
+                        modifier = Modifier.weight(1f)
+                    )
+                }
+            }
+
+            HomeSectionHeader(text = "Popüler Tarifler")
+            FlowRow(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(12.dp),
+                verticalArrangement = Arrangement.spacedBy(12.dp),
+                maxItemsInEachRow = 3
+            ) {
+                popularRecipes.forEach { recipe ->
+                    PopularRecipeCard(
+                        recipe = recipe,
+                        modifier = Modifier.weight(1f)
+                    )
+                }
+            }
+
+            Spacer(modifier = Modifier.height(16.dp))
         }
     }
 }
 
 @Composable
 private fun RoleCard(role: ChefRole, modifier: Modifier = Modifier, onClick: () -> Unit) {
-    val shape = RoundedCornerShape(32.dp)
-    val interactionSource = remember { MutableInteractionSource() }
-    Column(
-        modifier = modifier
-            .shadow(elevation = 8.dp, shape = shape, clip = false)
-            .clip(shape)
-            .background(color = FrostedWhite)
-            .border(width = 1.dp, color = role.primaryColor.copy(alpha = 0.4f), shape = shape)
-            .clickable(
-                interactionSource = interactionSource,
-                indication = null,
-                onClick = onClick
-            )
-            .padding(horizontal = 24.dp, vertical = 32.dp),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.spacedBy(16.dp)
+    Card(
+        modifier = modifier,
+        onClick = onClick,
+        shape = RoundedCornerShape(28.dp),
+        colors = CardDefaults.cardColors(containerColor = Color.White),
+        border = BorderStroke(1.dp, role.primaryColor.copy(alpha = 0.2f)),
+        elevation = CardDefaults.cardElevation(defaultElevation = 0.dp)
     ) {
-        Box(
+        Column(
             modifier = Modifier
-                .size(96.dp)
-                .clip(CircleShape)
-                .background(Brush.linearGradient(role.gradient))
-                .border(1.dp, role.primaryColor.copy(alpha = 0.5f), CircleShape),
-            contentAlignment = Alignment.Center
+                .fillMaxWidth()
+                .padding(horizontal = 20.dp, vertical = 28.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
-            Image(
-                painter = painterResource(id = role.icon),
-                contentDescription = role.displayName,
-                modifier = Modifier.size(56.dp)
+            Box(
+                modifier = Modifier
+                    .size(80.dp)
+                    .clip(CircleShape)
+                    .background(Brush.linearGradient(role.gradient)),
+                contentAlignment = Alignment.Center
+            ) {
+                Image(
+                    painter = painterResource(id = role.icon),
+                    contentDescription = role.displayName,
+                    modifier = Modifier.size(44.dp)
+                )
+            }
+            Text(
+                text = role.displayName,
+                style = MaterialTheme.typography.titleMedium.copy(
+                    color = DeepIndigo,
+                    fontWeight = FontWeight.SemiBold
+                ),
+                textAlign = TextAlign.Center
+            )
+            Text(
+                text = role.mission,
+                style = MaterialTheme.typography.bodySmall.copy(
+                    color = DeepIndigo.copy(alpha = 0.65f)
+                ),
+                textAlign = TextAlign.Center
             )
         }
-        Text(
-            text = role.displayName,
-            style = MaterialTheme.typography.titleMedium.copy(
-                color = DeepIndigo,
-                fontWeight = FontWeight.SemiBold
-            ),
-            textAlign = TextAlign.Center
-        )
-        Text(
-            text = role.mission,
-            style = MaterialTheme.typography.bodyMedium.copy(color = DeepIndigo.copy(alpha = 0.65f)),
-            textAlign = TextAlign.Center
-        )
     }
 }
 
 @Composable
+private fun HomeSectionHeader(text: String, modifier: Modifier = Modifier) {
+    Text(
+        modifier = modifier,
+        text = text,
+        style = MaterialTheme.typography.titleMedium.copy(
+            color = DeepIndigo,
+            fontWeight = FontWeight.SemiBold
+        )
+    )
+}
 
+@Composable
+private fun CategoryPreviewCard(category: RecipeCategory, modifier: Modifier = Modifier) {
+    Card(
+        modifier = modifier,
+        shape = RoundedCornerShape(24.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = Color.White
+        ),
+        border = BorderStroke(1.dp, category.accentColor.copy(alpha = 0.25f)),
+        elevation = CardDefaults.cardElevation(defaultElevation = 0.dp)
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp, vertical = 20.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(12.dp)
+        ) {
+            Box(
+                modifier = Modifier
+                    .size(56.dp)
+                    .clip(RoundedCornerShape(18.dp))
+                    .background(category.accentColor.copy(alpha = 0.2f)),
+                contentAlignment = Alignment.Center
+            ) {
+                Image(
+                    painter = painterResource(id = category.iconRes),
+                    contentDescription = category.title,
+                    modifier = Modifier.size(32.dp)
+                )
+            }
+            Text(
+                text = category.title,
+                style = MaterialTheme.typography.bodyLarge.copy(
+                    color = DeepIndigo,
+                    fontWeight = FontWeight.Medium
+                ),
+                textAlign = TextAlign.Center
+            )
+        }
+    }
+}
+@Composable
+private fun PopularRecipeCard(recipe: Recipe, modifier: Modifier = Modifier) {
+    Card(
+        modifier = modifier,
+        shape = RoundedCornerShape(20.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = Color.White
+        ),
+        border = BorderStroke(1.dp, Color(0xFFE4EBE7)),
+        elevation = CardDefaults.cardElevation(defaultElevation = 0.dp)
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 12.dp, vertical = 16.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(12.dp)
+        ) {
+            Box(
+                modifier = Modifier
+                    .size(60.dp)
+                    .clip(RoundedCornerShape(18.dp))
+                    .background(Color(0xFFF6F8F7)),
+                contentAlignment = Alignment.Center
+            ) {
+                Image(
+                    painter = painterResource(id = recipe.thumbnailRes),
+                    contentDescription = recipe.name,
+                    modifier = Modifier.size(36.dp),
+                    contentScale = ContentScale.Fit
+                )
+            }
+            Text(
+                text = recipe.name,
+                style = MaterialTheme.typography.bodyMedium.copy(
+                    color = DeepIndigo,
+                    fontWeight = FontWeight.Medium
+                ),
+                textAlign = TextAlign.Center,
+                maxLines = 2,
+                overflow = TextOverflow.Ellipsis
+            )
+        }
+    }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun HomeTopBar() {
+    TopAppBar(
+        title = {
+            Text(
+                text = "YemekYapalım mı?",
+                style = MaterialTheme.typography.titleLarge.copy(
+                    color = DeepIndigo,
+                    fontWeight = FontWeight.ExtraBold
+                )
+            )
+        },
+        actions = {
+            IconButton(onClick = {}) {
+                Icon(
+                    imageVector = Icons.Outlined.NotificationsNone,
+                    contentDescription = "Bildirimler",
+                    tint = DeepIndigo
+                )
+            }
+        },
+        colors = TopAppBarDefaults.topAppBarColors(
+            containerColor = Color.Transparent,
+            titleContentColor = DeepIndigo
+        )
+    )
+}
+
+@Composable
+private fun HomeBottomBar() {
+    var selectedItem by remember { mutableStateOf(0) }
+    val labels = listOf("Ana Sayfa", "Kategoriler", "Ekle", "Favoriler", "Profil")
+    val icons = listOf(
+        Icons.Outlined.Home,
+        Icons.Outlined.RestaurantMenu,
+        Icons.Outlined.Add,
+        Icons.Outlined.FavoriteBorder,
+        Icons.Outlined.Person
+    )
+
+    NavigationBar(
+        containerColor = Color.White,
+        tonalElevation = 6.dp
+    ) {
+        labels.forEachIndexed { index, label ->
+            val selected = selectedItem == index
+            NavigationBarItem(
+                selected = selected,
+                onClick = { selectedItem = index },
+                icon = {
+                    if (index == 2) {
+                        Box(
+                            modifier = Modifier
+                                .size(56.dp)
+                                .clip(CircleShape)
+                                .background(PastelMint),
+                            contentAlignment = Alignment.Center
+                        ) {
+                            Icon(
+                                imageVector = icons[index],
+                                contentDescription = label,
+                                tint = DeepIndigo
+                            )
+                        }
+                    } else {
+                        Icon(
+                            imageVector = icons[index],
+                            contentDescription = label
+                        )
+                    }
+                },
+                label = {
+                    Text(
+                        text = if (index == 2) "Yeni Tarif" else label,
+                        style = MaterialTheme.typography.labelMedium
+                    )
+                },
+                alwaysShowLabel = true,
+                colors = NavigationBarItemDefaults.colors(
+                    selectedIconColor = DeepIndigo,
+                    selectedTextColor = DeepIndigo,
+                    unselectedIconColor = DeepIndigo.copy(alpha = 0.6f),
+                    unselectedTextColor = DeepIndigo.copy(alpha = 0.6f),
+                    indicatorColor = PastelMint.copy(alpha = 0.35f)
+                )
+            )
+        }
+    }
+}
+
+@Composable
 private fun CategoryScreen(
-
     role: ChefRole,
     categories: List<RecipeCategory>,
     onCategorySelected: (RecipeCategory) -> Unit,
@@ -444,7 +717,8 @@ private fun RecipeCard(category: RecipeCategory, recipe: Recipe, onClick: () -> 
     }
 }
 
-@Composable
+
+
 
 private fun RecipeScreen(
     role: ChefRole,
@@ -472,13 +746,14 @@ private fun RecipeScreen(
                 .verticalScroll(rememberScrollState()),
             verticalArrangement = Arrangement.spacedBy(24.dp)
         ) {
-            RecipeHeroCard(category = category, recipe = recipe)
-            RoleInstructionSection(
-                role = role,
-                recipe = recipe
-            )
-            CollaborationCard(role = role, recipe = recipe)
-            Spacer(modifier = Modifier.height(32.dp))
+       RecipeHeroCard(category = category, recipe = recipe)
+    IngredientSection(recipe = recipe, accentColor = category.accentColor)
+    RoleInstructionSection(
+        role = role,
+        recipe = recipe
+    )
+    CollaborationCard(role = role, recipe = recipe)
+    Spacer(modifier = Modifier.height(32.dp))
         }
     }
 }
@@ -522,10 +797,119 @@ private fun RecipeHeroCard(category: RecipeCategory, recipe: Recipe) {
                     text = "Tarif iki aşamada tamamlanır: hazırlık ve pişirme adımlarını birleştirin.",
                     style = MaterialTheme.typography.bodyMedium.copy(color = DeepIndigo.copy(alpha = 0.6f))
                 )
+Spacer(modifier = Modifier.height(16.dp))
+RecipeMetrics(recipe = recipe, accentColor = category.accentColor)
             }
         }
     }
 }
+
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+private fun RecipeMetrics(recipe: Recipe, accentColor: Color) {
+    FlowRow(
+        horizontalArrangement = Arrangement.spacedBy(12.dp),
+        verticalArrangement = Arrangement.spacedBy(12.dp)
+    ) {
+        RecipeMetricChip(
+            label = "Hazırlık",
+            value = "${recipe.prepMinutes} dk",
+            accentColor = accentColor
+        )
+        RecipeMetricChip(
+            label = "Pişirme",
+            value = "${recipe.cookMinutes} dk",
+            accentColor = accentColor
+        )
+        RecipeMetricChip(
+            label = "Toplam",
+            value = "${recipe.totalMinutes} dk",
+            accentColor = accentColor
+        )
+        RecipeMetricChip(
+            label = "Kalori",
+            value = "${recipe.calories} kcal",
+            accentColor = accentColor
+        )
+    }
+}
+
+@Composable
+private fun RecipeMetricChip(label: String, value: String, accentColor: Color) {
+    Surface(
+        color = accentColor.copy(alpha = 0.18f),
+        shape = RoundedCornerShape(18.dp),
+        tonalElevation = 0.dp
+    ) {
+        Column(
+            modifier = Modifier
+                .padding(horizontal = 16.dp, vertical = 12.dp),
+            verticalArrangement = Arrangement.spacedBy(4.dp)
+        ) {
+            Text(
+                text = label,
+                style = MaterialTheme.typography.labelMedium.copy(
+                    color = DeepIndigo.copy(alpha = 0.7f),
+                    fontWeight = FontWeight.Medium
+                )
+            )
+            Text(
+                text = value,
+                style = MaterialTheme.typography.bodyMedium.copy(
+                    color = DeepIndigo,
+                    fontWeight = FontWeight.SemiBold
+                )
+            )
+        }
+    }
+}
+
+@Composable
+private fun IngredientSection(recipe: Recipe, accentColor: Color) {
+    Column(verticalArrangement = Arrangement.spacedBy(16.dp)) {
+        Text(
+            text = "Malzemeler",
+            style = MaterialTheme.typography.titleMedium.copy(
+                color = DeepIndigo,
+                fontWeight = FontWeight.SemiBold
+            )
+        )
+        Card(
+            shape = RoundedCornerShape(28.dp),
+            colors = CardDefaults.cardColors(containerColor = FrostedWhite),
+            elevation = CardDefaults.cardElevation(defaultElevation = 6.dp)
+        ) {
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 20.dp, vertical = 24.dp),
+                verticalArrangement = Arrangement.spacedBy(12.dp)
+            ) {
+                recipe.ingredients.forEach { ingredient ->
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(12.dp)
+                    ) {
+                        Box(
+                            modifier = Modifier
+                                .size(10.dp)
+                                .clip(CircleShape)
+                                .background(accentColor.copy(alpha = 0.8f))
+                        )
+                        Text(
+                            text = ingredient,
+                            style = MaterialTheme.typography.bodyMedium.copy(
+                                color = DeepIndigo.copy(alpha = 0.85f)
+                            )
+                        )
+                    }
+                }
+            }
+        }
+    }
+}
+
+ 
 
 @Composable
 private fun RoleInstructionSection(role: ChefRole, recipe: Recipe) {
@@ -571,16 +955,13 @@ private fun RoleInstructionSection(role: ChefRole, recipe: Recipe) {
         )
     }
 }
-
 @Composable
 private fun InstructionCard(
     role: ChefRole,
     steps: List<String>,
     isHighlighted: Boolean,
     showSteps: Boolean = true,
-
     extraContent: (@Composable ColumnScope.(Boolean) -> Unit)? = null
-
 ) {
     val shape = RoundedCornerShape(28.dp)
     Card(
@@ -589,6 +970,8 @@ private fun InstructionCard(
         elevation = CardDefaults.cardElevation(defaultElevation = if (isHighlighted) 10.dp else 4.dp),
         border = if (isHighlighted) BorderStroke(2.dp, role.primaryColor.copy(alpha = 0.5f)) else null
     ) {
+     
+
         Column(
             modifier = Modifier
                 .fillMaxWidth()

@@ -1,5 +1,9 @@
 package com.example.myapplication.model
 
+
+object RecipeRepository {
+    fun loadCategories(): List<RecipeCategory> = RecipeData.categories
+
 import androidx.compose.ui.graphics.Color
 import com.example.myapplication.R
 
@@ -969,4 +973,5 @@ object RecipeRepository {
             )
         )
     )
+
 }
