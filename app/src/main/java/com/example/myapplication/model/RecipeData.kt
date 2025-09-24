@@ -1,5 +1,6 @@
 package com.example.myapplication.model
 
+
 import androidx.compose.ui.graphics.Color
 import com.example.myapplication.R
 
@@ -7,11 +8,76 @@ object RecipeData {
     val categories = listOf(
         RecipeCategory(
             id = "makarna",
+
+import androidx.annotation.DrawableRes
+import androidx.compose.ui.graphics.Color
+import com.example.myapplication.R
+import com.example.myapplication.ui.theme.PastelBlue
+import com.example.myapplication.ui.theme.PastelGold
+import com.example.myapplication.ui.theme.PastelMint
+import com.example.myapplication.ui.theme.PastelPeach
+import com.example.myapplication.ui.theme.PastelPink
+
+enum class ChefRole(
+    val displayName: String,
+    @DrawableRes val icon: Int,
+    val primaryColor: Color,
+    val secondaryColor: Color,
+    val gradient: List<Color>,
+    val mission: String
+) {
+    Female(
+        displayName = "Kadın Şef",
+        icon = R.drawable.ic_role_female,
+        primaryColor = PastelPink,
+        secondaryColor = Color(0xFFFAD0E6),
+        gradient = listOf(Color(0xFFFFF5FB), Color(0xFFEFF4FF)),
+        mission = "Hazırlık & sos"
+    ),
+    Male(
+        displayName = "Erkek Şef",
+        icon = R.drawable.ic_role_male,
+        primaryColor = PastelBlue,
+        secondaryColor = Color(0xFFD7ECFF),
+        gradient = listOf(Color(0xFFEFF6FF), Color(0xFFFDF7FF)),
+        mission = "Pişirme & servis"
+    );
+
+    val shortLabel: String
+        get() = if (this == Female) "Kadın" else "Erkek"
+
+    fun opposite(): ChefRole = if (this == Female) Male else Female
+}
+
+data class RecipeCategory(
+    val id: String,
+    val title: String,
+    @DrawableRes val iconRes: Int,
+    val accentColor: Color,
+    val recipes: List<Recipe>
+)
+
+data class Recipe(
+    val id: String,
+    val name: String,
+    @DrawableRes val thumbnailRes: Int,
+    val femaleSteps: List<String>,
+    val maleSteps: List<String>
+) {
+    fun stepsFor(role: ChefRole): List<String> = if (role == ChefRole.Female) femaleSteps else maleSteps
+}
+
+object RecipeRepository {
+    val categories: List<RecipeCategory> = listOf(
+        RecipeCategory(
+            id = "pasta",
+
             title = "Makarna",
             iconRes = R.drawable.ic_category_pasta,
             accentColor = Color(0xFFFFB1C1),
             recipes = listOf(
                 Recipe(
+
                     id = "makarna_domatesli_spagetti",
                     name = "Klasik Domatesli Spagetti",
                     thumbnailRes = R.drawable.ic_recipe_thumb_peach,
@@ -298,11 +364,13 @@ object RecipeData {
                         "Tagliatelle'yi bol tuzlu suda 7 dakika haşlayın.",
                         "Makarnayı süzüp sosla karıştırın.",
                         "Servis tabaklarına alıp limon dilimleriyle sunun."
+
                     )
                 )
             )
         ),
         RecipeCategory(
+
             id = "corba",
             title = "Çorba",
             iconRes = R.drawable.ic_category_soup,
@@ -566,11 +634,13 @@ object RecipeData {
                         "Çorba koyulaştığında tuzunu ayarlayın.",
                         "Sarımsaklı tereyağ hazırlayıp üzerine gezdirin.",
                         "Servis kaselerini çıtır ekmekle tamamlayın."
+
                     )
                 )
             )
         ),
         RecipeCategory(
+
             id = "tatli",
             title = "Tatlı",
             iconRes = R.drawable.ic_category_dessert,
@@ -847,11 +917,13 @@ object RecipeData {
                         "Bisküvileri rondoda çekip taban için hazırlayın.",
                         "Kaselere sırayla bisküvi, muhallebi ve çilek katları yapın.",
                         "Servisten önce 2 saat buzdolabında dinlendirin."
+
                     )
                 )
             )
         ),
         RecipeCategory(
+
             id = "tavuk",
             title = "Tavuk",
             iconRes = R.drawable.ic_category_chicken,
@@ -1145,11 +1217,13 @@ object RecipeData {
                         "Tavukları küp doğrayıp soteyin.",
                         "Pirinçleri tencereye ekleyip kavurun, tarçınla tatlandırın.",
                         "Tavuk suyu ekleyip demlenmeye bırakın ve servis edin."
+
                     )
                 )
             )
         ),
         RecipeCategory(
+
             id = "balik",
             title = "Balık",
             iconRes = R.drawable.ic_category_fish,
@@ -1439,11 +1513,13 @@ object RecipeData {
                         "Somonları fırın kağıdı üzerine yerleştirip 200°C fırında 15-18 dakika pişirin.",
                         "Pişen balıkların üzerine sosundan gezdirin.",
                         "Serviste susam ve taze soğan serpin."
+
                     )
                 )
             )
         ),
         RecipeCategory(
+
             id = "salata",
             title = "Salata",
             iconRes = R.drawable.ic_category_salad,

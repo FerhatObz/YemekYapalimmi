@@ -14,5 +14,6 @@ data class Recipe(
     val femaleSteps: List<String>,
     val maleSteps: List<String>
 ) {
-    fun stepsFor(role: ChefRole): List<String> = if (role == ChefRole.Female) femaleSteps else maleSteps
+    fun stepsFor(role: ChefRole): List<String> =
+        if (role == ChefRole.Female) femaleSteps else maleSteps
 }

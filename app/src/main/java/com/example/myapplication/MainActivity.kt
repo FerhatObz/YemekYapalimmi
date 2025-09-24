@@ -11,12 +11,18 @@ import androidx.compose.animation.fadeOut
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.interaction.MutableInteractionSource
+
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ColumnScope
+
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
+
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -34,6 +40,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.material3.Button
+
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Add
 import androidx.compose.material.icons.outlined.FavoriteBorder
@@ -41,20 +48,26 @@ import androidx.compose.material.icons.outlined.Home
 import androidx.compose.material.icons.outlined.NotificationsNone
 import androidx.compose.material.icons.outlined.Person
 import androidx.compose.material.icons.outlined.RestaurantMenu
+
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.IconButton
+
 import androidx.compose.material3.Icon
+
+
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.NavigationBarItemDefaults
 import androidx.compose.material3.TopAppBar
+
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.rememberTopAppBarState
 import androidx.compose.runtime.Composable
@@ -65,6 +78,9 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+
+import androidx.compose.ui.draw.shadow
+
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
@@ -104,6 +120,7 @@ private sealed class AppScreen {
 @Composable
 private fun YemekYapalimmiApp() {
     val categories = remember { RecipeRepository.loadCategories() }
+
     var currentScreen by remember { mutableStateOf<AppScreen>(AppScreen.RoleSelection) }
 
     val roleForBackground = when (val screen = currentScreen) {
@@ -125,6 +142,7 @@ private fun YemekYapalimmiApp() {
                 .background(Brush.verticalGradient(gradient))
         ) {
             when (val screen = currentScreen) {
+
                 AppScreen.RoleSelection -> RoleSelectionScreen(
                     categories = categories,
                     onRoleSelected = {
@@ -135,6 +153,7 @@ private fun YemekYapalimmiApp() {
                 is AppScreen.CategorySelection -> {
                     BackHandler { currentScreen = AppScreen.RoleSelection }
                     CategoryScreen(
+
                         role = screen.role,
                         categories = categories,
                         onCategorySelected = { category ->
@@ -156,18 +175,18 @@ private fun YemekYapalimmiApp() {
                     )
                 }
 
-                is AppScreen.RecipeDetail -> {
-                    BackHandler { currentScreen = AppScreen.RecipeList(screen.role, screen.category) }
-                    RecipeScreen(
-                        role = screen.role,
-                        category = screen.category,
-                        recipe = screen.recipe,
-                        onBack = { currentScreen = AppScreen.RecipeList(screen.role, screen.category) }
-                    )
-                }
-            }
-        }
-    }
+is AppScreen.RecipeDetail -> {
+    BackHandler { currentScreen = AppScreen.RecipeList(screen.role, screen.category) }
+    RecipeScreen(
+        role = screen.role,
+        category = screen.category,
+        recipe = screen.recipe,
+        onBack = { currentScreen = AppScreen.RecipeList(screen.role, screen.category) }
+    )
+}
+}
+}
+}
 }
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
@@ -209,6 +228,13 @@ private fun RoleSelectionScreen(
                     text = "Rolünü seç, pastel mutfağı keşfet.",
                     style = MaterialTheme.typography.bodyMedium.copy(
                         color = DeepIndigo.copy(alpha = 0.7f)
+                    )
+                )
+            }
+        }
+    }
+}
+
                     )
                 )
             }
@@ -363,7 +389,6 @@ private fun CategoryPreviewCard(category: RecipeCategory, modifier: Modifier = M
         }
     }
 }
-
 @Composable
 private fun PopularRecipeCard(recipe: Recipe, modifier: Modifier = Modifier) {
     Card(
@@ -692,7 +717,9 @@ private fun RecipeCard(category: RecipeCategory, recipe: Recipe, onClick: () -> 
     }
 }
 
-@Composable
+
+
+
 private fun RecipeScreen(
     role: ChefRole,
     category: RecipeCategory,
@@ -719,14 +746,14 @@ private fun RecipeScreen(
                 .verticalScroll(rememberScrollState()),
             verticalArrangement = Arrangement.spacedBy(24.dp)
         ) {
-            RecipeHeroCard(category = category, recipe = recipe)
-            IngredientSection(recipe = recipe, accentColor = category.accentColor)
-            RoleInstructionSection(
-                role = role,
-                recipe = recipe
-            )
-            CollaborationCard(role = role, recipe = recipe)
-            Spacer(modifier = Modifier.height(32.dp))
+       RecipeHeroCard(category = category, recipe = recipe)
+    IngredientSection(recipe = recipe, accentColor = category.accentColor)
+    RoleInstructionSection(
+        role = role,
+        recipe = recipe
+    )
+    CollaborationCard(role = role, recipe = recipe)
+    Spacer(modifier = Modifier.height(32.dp))
         }
     }
 }
@@ -770,8 +797,8 @@ private fun RecipeHeroCard(category: RecipeCategory, recipe: Recipe) {
                     text = "Tarif iki aşamada tamamlanır: hazırlık ve pişirme adımlarını birleştirin.",
                     style = MaterialTheme.typography.bodyMedium.copy(color = DeepIndigo.copy(alpha = 0.6f))
                 )
-                Spacer(modifier = Modifier.height(16.dp))
-                RecipeMetrics(recipe = recipe, accentColor = category.accentColor)
+Spacer(modifier = Modifier.height(16.dp))
+RecipeMetrics(recipe = recipe, accentColor = category.accentColor)
             }
         }
     }
@@ -871,7 +898,9 @@ private fun IngredientSection(recipe: Recipe, accentColor: Color) {
                         )
                         Text(
                             text = ingredient,
-                            style = MaterialTheme.typography.bodyMedium.copy(color = DeepIndigo.copy(alpha = 0.85f))
+                            style = MaterialTheme.typography.bodyMedium.copy(
+                                color = DeepIndigo.copy(alpha = 0.85f)
+                            )
                         )
                     }
                 }
@@ -879,6 +908,8 @@ private fun IngredientSection(recipe: Recipe, accentColor: Color) {
         }
     }
 }
+
+ 
 
 @Composable
 private fun RoleInstructionSection(role: ChefRole, recipe: Recipe) {
@@ -924,7 +955,6 @@ private fun RoleInstructionSection(role: ChefRole, recipe: Recipe) {
         )
     }
 }
-
 @Composable
 private fun InstructionCard(
     role: ChefRole,
@@ -940,6 +970,8 @@ private fun InstructionCard(
         elevation = CardDefaults.cardElevation(defaultElevation = if (isHighlighted) 10.dp else 4.dp),
         border = if (isHighlighted) BorderStroke(2.dp, role.primaryColor.copy(alpha = 0.5f)) else null
     ) {
+     
+
         Column(
             modifier = Modifier
                 .fillMaxWidth()
